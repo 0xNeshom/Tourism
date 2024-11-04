@@ -1,0 +1,13 @@
+/* styles/fonts.css */
+@font-face {
+    font-family: 'IRANSansX-Black';
+    src: url('/fonts/IRANSansX-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Example of using the font */
+  body {
+    font-family: 'IRANSansX-Black', sans-serif; /* Fallback font */
+  }
+  
