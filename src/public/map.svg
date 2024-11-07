@@ -1,0 +1,26 @@
+<svg width="82" height="110" viewBox="0 0 82 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_1976_6221)">
+<circle cx="36.9167" cy="30.25" r="13.75" fill="#FF7A00" fill-opacity="0.3"/>
+</g>
+<g filter="url(#filter1_f_1976_6221)">
+<circle cx="49.4167" cy="77.75" r="16.25" fill="#DA63E4" fill-opacity="0.3"/>
+</g>
+<path d="M30.6667 71.5L14.2847 79.691C12.6224 80.5221 10.6667 79.3134 10.6667 77.4549V38.0451C10.6667 37.0982 11.2017 36.2325 12.0486 35.809L30.6667 26.5M30.6667 71.5L50.6667 81.5M30.6667 71.5V26.5M30.6667 71.5L34.7051 62.75M50.6667 81.5V36.5M50.6667 81.5L54.4167 79.625M50.6667 36.5L67.0486 28.309C68.7109 27.4779 70.6667 28.6866 70.6667 30.5451V69.9549C70.6667 70.9018 70.1317 71.7675 69.2847 72.191L54.4167 79.625M50.6667 36.5L30.6667 26.5M50.3782 64L44.0015 52.1576C43.0243 50.3427 40.3942 50.4237 39.5304 52.2952L34.7051 62.75M50.3782 64L47.9093 63.1771C47.1242 62.9153 46.2585 63.1197 45.6733 63.7049L45.3782 64C44.6878 64.6904 43.5685 64.6904 42.8782 64C42.1878 63.3096 41.0685 63.3096 40.3782 64L40.2078 64.1704C39.5698 64.8084 38.5846 64.9427 37.799 64.4987L34.7051 62.75M50.3782 64L54.4167 79.625" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55.6667 39H55.9724C56.5934 39 57.2058 39.1446 57.7612 39.4223L59.4167 40.25L61.0721 39.4223C61.6275 39.1446 62.2399 39 62.8609 39H63.1667" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.6667 61.5C18.1667 61.5 23.6667 60 25.6667 54C28.1667 46.5 34.4167 42.75 40.6667 42.75C46.9167 42.75 58.1667 50.25 69.4167 42.75" stroke="black" stroke-linecap="round" stroke-dasharray="2 2"/>
+<path d="M61.9168 75.25V68.9662M61.9168 68.9662H56.9169L61.6044 60.8581H56.9167L61.9168 52.75L66.9161 60.8581H62.2292L66.9167 68.9662H61.9168Z" stroke="black" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M15.0397 48.9142L19.4167 56.5008L23.7936 48.9142C24.906 46.986 24.6256 44.557 23.1031 42.933C21.1067 40.8036 17.7266 40.8036 15.7302 42.933C14.2077 44.557 13.9273 46.986 15.0397 48.9142Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="19.4167" cy="46.5" r="2" stroke="black"/>
+<defs>
+<filter id="filter0_f_1976_6221" x="7.16666" y="0.5" width="59.5" height="59.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="8" result="effect1_foregroundBlur_1976_6221"/>
+</filter>
+<filter id="filter1_f_1976_6221" x="17.1667" y="45.5" width="64.5" height="64.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="8" result="effect1_foregroundBlur_1976_6221"/>
+</filter>
+</defs>
+</svg>

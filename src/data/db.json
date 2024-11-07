@@ -1,0 +1,25 @@
+{
+    "tours": [
+      {
+        "id": 1,
+        "title": "گلاب‌گیری کاشان",
+        "location": "کاشان",
+        "days": 3,
+        "oldPrice": 5000000,
+        "price": 4000000,
+        "rating": 4.5,
+        "image": "./forest.svg"
+      },
+      {
+        "id": 2,
+        "title": "کویر لوت",
+        "location": "کرمان",
+        "days": 2,
+        "oldPrice": 6000000,
+        "price": 4500000,
+        "rating": 4.3,
+        "image": "./forest.svg"
+      }
+    ]
+  }
+  
