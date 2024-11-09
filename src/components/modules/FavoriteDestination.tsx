@@ -33,7 +33,7 @@ const FavoriteDestination = () => {
     },
   ];
   return (
-    <div className='bg-Main  flex md:gap-10 justify-center items-center flex-wrap  '>
+    <div className='bg-Main  flex md:gap-10 justify-center items-center flex-wrap md:mb-20 '>
       {options.map((e) => (
         <div key={e.id} className='md:mt-14 xs:mt-7 md:mb-8 xs:mb-4'>
           <div>
