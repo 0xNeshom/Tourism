@@ -5,7 +5,7 @@ import banner from '@/public/image 36.svg';
 const Banner: React.FC = () => {
   return (
     <header>
-      <div className='flex justify-center relative md:max-w-full sm:max-w-96 mb-3 mx-4 overflow-hidden'>
+      <div className='flex justify-center relative md:max-w-full sm:max-w-96 mb-5 md:mb-0  mx-4 overflow-hidden'>
         <Link href=''>
           <Image
             src={banner}
