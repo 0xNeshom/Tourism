@@ -1,5 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+<<<<<<< HEAD
+=======
+import React from 'react';
+
+>>>>>>> tour-list
 import Banner from '@/public/image 20.svg';
 import shadow from '@/public/Home page pictures.svg';
 import bg from '@/public/isfahan.svg';

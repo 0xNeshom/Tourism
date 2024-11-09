@@ -13,12 +13,15 @@ const FavoriteLocations = () => {
   ];
   return (
     <>
-      <div className=' justify-center items-center md:mt-20 hidden md:block'>
-        <h3 className='text-2xl font-semibold md:mr-28 md:mb-10  '>
+      <h3 className='text-2xl hidden md:blcok  md:mr-28 md:mb-10'>
+        شهر های محبوب رو دیدی ؟
+      </h3>
+      <div className=' justify-center items-center md:flex  hidden md:mx-14 gap-7  '>
+        {/* <h3 className='text-2xl  md:mr-28 md:mb-10  '>
           شهر های محبوب رو دیدی ؟
-        </h3>
-        <div className='md:mx-12 flex justify-center items-center'>
-          <div className='md:w-2/3 flex flex-col md:gap-9 justify-center items-center'>
+        </h3> */}
+        <div className=' flex justify-center items-center gap-7'>
+          <div className=' flex flex-col md:gap-5 justify-center items-center'>
             <div className='border-[1px] border-primary md:p-4 xs:p-2 rounded-3xl relative'>
               <Link href=''>
                 <Image src={rasht} alt='rasht' />
@@ -55,9 +58,9 @@ const FavoriteLocations = () => {
               <Image src={paris} alt='paris' />
             </Link>
             <div className='flex flex-col gap-2 absolute right-12 top-9 text-white '>
-                  <span className='text-xl font-bold'>پاریس</span>
-                  <span className='text-sm font-normal'>2 تور فعال</span>
-                </div>
+              <span className='text-xl font-bold'>پاریس</span>
+              <span className='text-sm font-normal'>2 تور فعال</span>
+            </div>
           </div>
         </div>
       </div>
