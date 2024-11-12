@@ -13,7 +13,7 @@ interface TripData {
   image?: string;
 }
 
-const TourCard = () => {
+const TourCardMock = () => {
   const { data, isError, isLoading } = useQuery({
     queryKey: ['fetching-tour-data'],
     queryFn: getTourDataMock,
@@ -29,7 +29,7 @@ const TourCard = () => {
 
   return (
     <div className='max-w-4xl mx-auto space-y-6 p-4'>
-      {data?.map((tour: any) => (
+      {data?.map((tour: TripData) => (
         <div
           key={tour.id}
           className='bg-white rounded-xl shadow-md overflow-hidden rtl'
@@ -58,4 +58,4 @@ const TourCard = () => {
   );
 };
 
-export default TourCard;
+export default TourCardMock;

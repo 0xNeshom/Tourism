@@ -6,6 +6,6 @@ export const getTourData = async () => {
 
 
 export async function getTourDataMock() {
-  const response = await axios.get('api/tours');
+  const response = await axios.get('api/tours/');
   return response.data;
 }

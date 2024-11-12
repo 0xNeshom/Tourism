@@ -1,12 +1,12 @@
 
-import Header from '@/components/modules/Header';
-import Category from '@/components/modules/Category';
-import PopularDestinations from '@/components/modules/PopularDestinations';
-import CategoryOptions from '@/components/modules/CategoryOptions';
+import Header from '@/components/Header';
+import Category from '@/components/Category';
+import PopularDestinations from '@/components/PopularDestinations';
+import CategoryOptions from '@/components/CategoryOptions';
 import TourMostSeller from '@/components/modules/TourMostSeller';
-import Advertising from '@/components/modules/Advertising';
-import FavoriteDestination from '@/components/modules/FavoriteDestination';
-import FavoriteLocations from '@/components/modules/FavoriteLocations';
+import Advertising from '@/components/Advertising';
+import FavoriteDestination from '@/components/FavoriteDestination';
+import FavoriteLocations from '@/components/FavoriteLocations';
 import TourSlider from '@/components/templates/TourSlider';
 
 export default function Home() {
