@@ -9,13 +9,13 @@ import airicon from '@/public/Air Icon 1.svg';
 import luggage from '@/public/luggage.svg';
 
 const categories = [
-  { id: 1, href: '', img: forest, label: 'جنگلی', width: 100, height: 100 },
-  { id: 2, href: '', img: umbrella, label: 'ساحلی', width: 96, height: 96 },
-  { id: 3, href: '', img: place, label: 'زیارتی', width: 80, height: 80 },
-  { id: 4, href: '', img: group, label: 'بومگردی', width: 96, height: 96 },
-  { id: 5, href: '', img: map, label: 'تاریخی', width: 72, height: 72 },
-  { id: 6, href: '', img: airicon, label: 'خارجی', width: 80, height: 80 },
-  { id: 7, href: '', img: luggage, label: 'همه تورها', width: 72, height: 72 },
+  { id: 1, href: './tourlist', img: forest, label: 'جنگلی', width: 100, height: 100 },
+  { id: 2, href: './tourlist', img: umbrella, label: 'ساحلی', width: 96, height: 96 },
+  { id: 3, href: './tourlist', img: place, label: 'زیارتی', width: 80, height: 80 },
+  { id: 4, href: './tourlist', img: group, label: 'بومگردی', width: 96, height: 96 },
+  { id: 5, href: './tourlist', img: map, label: 'تاریخی', width: 72, height: 72 },
+  { id: 6, href: './tourlist', img: airicon, label: 'خارجی', width: 80, height: 80 },
+  { id: 7, href: './tourlist', img: luggage, label: 'همه تورها', width: 72, height: 72 },
 ];
 
 const Category: React.FC = () => {

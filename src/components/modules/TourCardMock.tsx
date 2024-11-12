@@ -2,7 +2,7 @@
 import { useQuery } from 'react-query';
 import Image from 'next/image';
 import { getTourData } from '@/utilities/actions/TourDataFetch'; 
-
+import { getTourDataMock } from '@/utilities/actions/TourDataFetch';
 //The main api is getTourData but it's not completed so i used a fake api
 interface TripData {
   id: number;
@@ -16,7 +16,7 @@ interface TripData {
 const TourCard = () => {
   const { data, isError, isLoading } = useQuery({
     queryKey: ['fetching-tour-data'],
-    queryFn: getTourData,
+    queryFn: getTourDataMock,
   });
   console.log(data);
 

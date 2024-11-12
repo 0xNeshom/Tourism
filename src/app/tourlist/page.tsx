@@ -1,9 +1,9 @@
-import TourCard from "@/components/modules/TourCard"
+import TourCardMock from "@/components/modules/TourCardMock"
 const TourList = () => {
 
   return (
     <div>
-      <TourCard/>
+      <TourCardMock/>
     </div>
   )
 }

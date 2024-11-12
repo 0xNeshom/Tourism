@@ -18,10 +18,17 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/TourSlider.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/data/TourSlider.js",
+    "src/utilities/ReactQuery.ts",
+    "src/app/api/tours/[id]/route.js"
+  ],
   "exclude": ["node_modules"]
 }

@@ -12,8 +12,8 @@ const FavoriteLocations = () => {
     { id: 4, details: 2, text: 'ژاپن' },
   ];
   return (
-    <>
-      <h3 className='text-2xl hidden md:blcok  md:mr-28 md:mb-10'>
+    <div>
+      <h3 className='md:text-2xl hidden md:block  md:mr-28 md:mb-10'>
         شهر های محبوب رو دیدی ؟
       </h3>
       <div className=' justify-center items-center md:flex  hidden md:mx-14 gap-7  '>
@@ -64,7 +64,7 @@ const FavoriteLocations = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
