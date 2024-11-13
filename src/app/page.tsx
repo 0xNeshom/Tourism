@@ -9,10 +9,8 @@ import FavoriteLocations from '@/components/FavoriteLocations';
 import TourSlider from '@/components/templates/TourSlider';
 
 export default function Home() {
-  
   return (
     <>
-      
       <Header />
       <CategoryOptions />
       <Category />

@@ -1,12 +1,14 @@
-import TourCardMock from "@/components/modules/TourCardMock"
-import TourCard from "@/components/modules/TourCard"
-const TourList = () => {
+import React from 'react';
+import TourCard from '@/components/modules/TourCard';
+import Gisoom from '@/components/Gisoom';
+const TourList: React.FC = () => {
 
   return (
     <div>
-      <TourCard/>
+      <Gisoom/>
+      <TourCard />
     </div>
-  )
-}
+  );
+};
 
-export default TourList
+export default TourList;

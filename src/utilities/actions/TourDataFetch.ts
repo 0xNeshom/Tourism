@@ -1,7 +1,7 @@
 import axios from 'axios';
 export const getTourData = async () => {
   const response = await axios.get('https://matinmn.pythonanywhere.com/api/trips/');
-  return response.data;
+  return response.data.slice(0,20);
 };
 
 

@@ -1,8 +1,10 @@
 'use client';
 import { useQuery } from 'react-query';
 import Image from 'next/image';
-import { getTourData } from '@/utilities/actions/TourDataFetch'; 
-
+import { getTourData } from '@/utilities/actions/TourDataFetch';
+import { toPersianDigits } from '@/utilities/persianNumber/persian';
+import Link from 'next/link';
+import img1 from '@/public/4dea20f52f20dbce6cff2159ed433d97 (1).jpeg'
 //The main api is getTourData but it's not completed so i used a fake api
 interface TripData {
   id: number;
@@ -15,7 +17,7 @@ interface TripData {
 
 const TourCard = () => {
   const { data, isError, isLoading } = useQuery({
-    queryKey: ['fetching-tour-data'],
+    queryKey: ['fetching-data-data'],
     queryFn: getTourData,
   });
   console.log(data);
@@ -28,28 +30,51 @@ const TourCard = () => {
   }
 
   return (
+    
     <div className='max-w-4xl mx-auto space-y-6 p-4'>
-      {data?.map((tour: any) => (
+      
+      {data?.map((data: any) => (
         <div
-          key={tour.id}
-          className='bg-white rounded-xl shadow-md overflow-hidden rtl'
+          key={data.id}
+          className='bg-white rounded-xl shadow-sm overflow-hidden rtl text-base  
+           md:w-[821px]'
         >
-          <div className='flex flex-col md:flex-row'>
+          <div className='flex flex-col md:flex-row items-center w-full'>
             <div className='md:w-72 relative'>
               <Image
-                src={tour.image || '/default-image.jpg'}
-                alt={tour.title}
-                width={288}
-                height={400}
-                className='h-full w-full object-cover'
+                src={data.image || '/default-image.jpg'}
+                alt=''
+                width={280}
+                height={280}
+                className='h-full w-full object-cover p-3'
               />
             </div>
-            <div className='flex flex-col p-4'>
-              <h3>{tour.title}</h3>
-              <p>{tour.description}</p>
-              <p>
-                {tour.start_date} - {tour.end_date}
-              </p>
+            <div className='flex flex-col w-full'>
+              <div>
+                <div className='flex flex-col p-4 gap-5'>
+                  <h3>{data.tour.city.province.name}</h3>
+                  <p>3 شب / طبیعت گردی / کمپ / چادر</p>
+                  <p>امکانات : غذا / تورلیدر / عکاس</p>
+                  <span>
+                    {`قیمت : ${toPersianDigits(Math.round(data.price))} `}
+                    <small style={{ fontSize: '0.8em' }}>تومان</small>
+                  </span>
+                </div>
+
+                <div></div>
+              </div>
+              <div className='mx-5 my-3 '>
+                <div className='w-full bg-primary text-white flex rounded-md'>
+                  <Link href='' className='w-full'>
+                    <button
+                      className='w-full h-[42px] flex items-center justify-center'
+                      style={{ height: '42px' }}
+                    >
+                      مشاهده و رزرو
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

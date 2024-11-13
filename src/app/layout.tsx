@@ -4,7 +4,7 @@ import Navbar from '@/components/templates/Navbar';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
-import Provider from '@/utilities/ReactQuery';
+import Provider from '@/utilities/reactQueryProvider/ReactQuery';
 
 const iranSans = localFont({
   src: '../public/fonts/woff/IRANSansX-Black.woff',
