@@ -1,15 +1,35 @@
-import React from 'react'
+'use client';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 
-const page = () => {
+const Page = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  const router = useRouter();
+  const { id } = router.query;
+
+  useEffect(() => {
+    // Ensure that `useRouter` is only used after the component has mounted
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <div>Loading...</div>;
+  }
+
+  // Check if the router is available (just in case)
+  if (!router || !id) {
+    return <div>Invalid ID</div>;
+  }
+
   return (
     <div>
-      
+      <h1>جزئیات تور {id}</h1>
+      {/* نمایش اطلاعات تور */}
     </div>
-  )
-}
+  );
+};
 
-export default page
-
+export default Page;
 
 // import Image from 'next/image'
 // import { notFound } from 'next/navigation'
