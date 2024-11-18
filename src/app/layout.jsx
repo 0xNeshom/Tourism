@@ -20,9 +20,7 @@ export default function RootLayout({ children }) {
     <html lang='fa' dir='rtl'>
       <body className={`${iranSans.src} antialiased max-w-[1550px] mx-auto`}>
         <Provider>
-          <Navbar />
           {children}
-          <Footer />
         </Provider>
         <ScrollTop />
       </body>

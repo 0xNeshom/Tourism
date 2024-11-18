@@ -14,24 +14,48 @@ const Navbar: React.FC = () => {
         <ul className='flex gap-2 items-center'>
           <li>
             <Link href='/about-us'>
-              <Image priority={true} width={50} height={50} src={Logo} alt='Logo' className='w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]' />
+              <Image
+                priority={true}
+                width={50}
+                height={50}
+                src={Logo}
+                alt='Logo'
+                className='w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]'
+              />
             </Link>
           </li>
           <li>
             <Link href='/about-us'>
-              <Image priority={true} src={Logo1} width={50} height={50} alt='Logo' className='w-8 h-8 sm:w-10 sm:h-10 md:w-[65px] md:h-[36px]' />
+              <Image
+                priority={true}
+                src={Logo1}
+                width={50}
+                height={50}
+                alt='Logo'
+                className='w-8 h-8 sm:w-10 sm:h-10 md:w-[65px] md:h-[36px]'
+              />
             </Link>
           </li>
         </ul>
         <div className='hidden md:flex md:gap-3 md:text-lg text-nowrap font-medium items-center md:mr-7'>
           <Link href=''>
-            <Image priority={true} src={notif} alt='notif' className='hover:opacity-80' />
+            <Image
+              priority={true}
+              src={notif}
+              alt='notif'
+              className='hover:opacity-80'
+            />
           </Link>
           <Link href=''>
             <span className='hover:text-primary'>پیام ها</span>
           </Link>
           <Link href=''>
-            <Image priority={true} src={alarm} alt='alarm' className='hover:opacity-80' />
+            <Image
+              priority={true}
+              src={alarm}
+              alt='alarm'
+              className='hover:opacity-80'
+            />
           </Link>
           <Link href=''>
             <span className='hover:text-primary'>پشتیبانی</span>
@@ -40,13 +64,27 @@ const Navbar: React.FC = () => {
       </div>
       <div className='flex items-center gap-3 sm:gap-5 md:gap-5'>
         <Link href='' className='hidden md:block'>
-          <Image priority={true} src={profile} alt='profile' className='hover:opacity-80' />
+          <Image
+            priority={true}
+            src={profile}
+            alt='profile'
+            className='hover:opacity-80'
+          />
         </Link>
-        <Link href='' className='text-sm sm:text-base md:text-lg hover:text-primary'>
+        <Link
+          href=''
+          className='text-sm sm:text-base md:text-lg hover:text-primary'
+        >
           <span>ورود /ثبت نام</span>
         </Link>
         <Link href='' className='hover:opacity-80'>
-          <Image priority={true} width={32} height={32} src={enter} alt='enter' />
+          <Image
+            priority={true}
+            width={32}
+            height={32}
+            src={enter}
+            alt='enter'
+          />
         </Link>
       </div>
     </nav>
