@@ -29,6 +29,6 @@
     "src/data/TourSlider.js",
     "src/utilities/ReactQuery.ts",
     "src/app/api/tours/[id]/route.js"
-  ],
+, "src/app/layout.jsx"  ],
   "exclude": ["node_modules"]
 }

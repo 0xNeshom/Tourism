@@ -19,6 +19,9 @@ const config: Config = {
       screens: {
         'xs': '480px',
       },
+      fontFamily: {
+        iranSans: ['IRANSansX-Black', 'sans-serif'], // اضافه کردن فونت‌های Regular، Bold و Black
+      },
     },
   },
   plugins: [],

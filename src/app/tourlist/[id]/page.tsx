@@ -1,30 +1,21 @@
-'use client';
-import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import Gisoom from '@/components/templates/Gisoom';
 
-const Page = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const router = useRouter();
-  const { id } = router.query;
+type TParams = {
+  params: {
+    slug: string;
+  };
+};
 
-  useEffect(() => {
-    // Ensure that `useRouter` is only used after the component has mounted
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return <div>Loading...</div>;
-  }
-
-  // Check if the router is available (just in case)
-  if (!router || !id) {
-    return <div>Invalid ID</div>;
-  }
+type Tour_Types = {
+  Gisoom: 'Gisoom';
+};
+const Page = ({ params }: TParams) => {
+  const { slug } = params;
 
   return (
     <div>
-      <h1>جزئیات تور {id}</h1>
-      {/* نمایش اطلاعات تور */}
+      <Gisoom />
+      <h1>جزئیات تور {slug}</h1>
     </div>
   );
 };
@@ -46,7 +37,7 @@ export default Page;
 // async function getProduct(id: string): Promise<Product | null> {
 //   try {
 //     const res = await fetch(`http://localhost:3000/api/tours/`)
-    
+
 //     if (!res.ok) {
 //       if (res.status === 404) return null
 //       throw new Error('خطا در دریافت اطلاعات محصول')
@@ -65,7 +56,7 @@ export default Page;
 //   params: { id: string }
 // }) {
 //   const product = await getProduct(id)
-  
+
 //   if (!product) {
 //     notFound()
 //   }
