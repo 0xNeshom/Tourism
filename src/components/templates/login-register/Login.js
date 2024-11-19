@@ -1,16 +1,18 @@
 'use client';
 import React from 'react';
+
 import field1 from '@/public/Field (1).svg';
 import Image from 'next/image';
 import logo from '@/public/Logo-login.svg';
 import wave from '@/public/Wave.svg';
+import Link from 'next/link';
 const Login = ({ showRegisterForm }) => {
   return (
     <div className='page flex justify-center relative  bg-white w-full'>
       <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl mt-14 '>
         {/* PHOTO */}
         <div className='container flex flex-col '>
-          <Image src={field1} alt='' />
+          <Image src={field1} alt='' priority={true} />
         </div>
         <div className='mt-10 flex flex-col justify-center items-center gap-3'>
           <h3 className='text-xl'>ورود با رمز عبور</h3>
@@ -31,11 +33,19 @@ const Login = ({ showRegisterForm }) => {
             className=' justify-center flex bg-[#F8F8F8] outline-none w-3/5 pr-3 h-[42px] appearance-none rounded-md placeholder-black text-xs'
           />
         </div>
-        <div className='mb-11 flex flex-col justify-center items-center gap-3'>
-          <button className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'>
+        <div className='mb-8 flex flex-col justify-center items-center gap-8'>
+          <button
+            onClick={showRegisterForm}
+            className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'
+          >
             ورود با رمز عبور
           </button>
+          <div className='flex gap-44 text-xs text-primary'>
+            <span>فراموشی رمز</span>
+            <span>ورود با رمز یکبار مصرف</span>
+          </div>
         </div>
+       
         <span
           className='text-[10px] flex justify-center mb-2'
           style={{ fontWeight: 200 }}

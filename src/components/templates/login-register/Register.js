@@ -11,7 +11,7 @@ const Register = ({showloginForm}) => {
       <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl mt-14 '>
         {/* PHOTO */}
         <div className='container flex flex-col '>
-          <Image src={field} alt='' />
+          <Image src={field} alt='' priority={true}  />
         </div>
         <div className='mt-10 flex flex-col justify-center items-center gap-3'>
           <h3 className='text-xl'>ورود یا ثبت نام</h3>

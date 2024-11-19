@@ -75,7 +75,9 @@ const Navbar: React.FC = () => {
           href=''
           className='text-sm sm:text-base md:text-lg hover:text-primary'
         >
-          <span>ورود /ثبت نام</span>
+          <Link href='./login-register'>
+            <span>ورود /ثبت نام</span>
+          </Link>
         </Link>
         <Link href='' className='hover:opacity-80'>
           <Image
