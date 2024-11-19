@@ -10,9 +10,8 @@ const Page = () => {
 
   const showRegisterForm = () => setAuthType(authTypes.REGISTER);
   const showloginForm = () => setAuthType(authTypes.LOGIN);
-  console.log("Login Button Clicked"); // برای showLoginForm
-  console.log("Register Button Clicked"); // برای showRegisterForm
-  
+  console.log("Login Button Clicked"); 
+  console.log("Register Button Clicked"); 
   return (
     <div>
       <div  >

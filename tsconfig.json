@@ -28,7 +28,9 @@
     ".next/types/**/*.ts",
     "src/data/TourSlider.js",
     "src/utilities/ReactQuery.ts",
-    "src/app/api/tours/[id]/route.js"
-, "src/app/layout.jsx", "src/app/login-register/page.jsx"  ],
+    "src/app/api/tours/[id]/route.js",
+    "src/app/layout.jsx",
+    "src/app/(auth)/login-register/page.jsx"
+  ],
   "exclude": ["node_modules"]
 }

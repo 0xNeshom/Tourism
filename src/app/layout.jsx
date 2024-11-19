@@ -1,10 +1,8 @@
 import Footer from '@/components/modules/Footer';
-import Navbar from '@/components/modules/Navbar';
 import ScrollTop from '@/utilities/scrollToTop/ScrollToTop';
 import './globals.css';
 import localFont from 'next/font/local';
 import Provider from '@/utilities/reactQueryProvider/ReactQuery';
-
 const iranSans = localFont({
   src: [
     { path: '../public/fonts/IRANSansX-Regular.woff2' },

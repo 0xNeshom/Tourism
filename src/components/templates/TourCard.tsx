@@ -16,22 +16,30 @@ interface TripData {
 }
 
 const TourCard = ({ params }: { params: { id?: string } }) => {
-  const id = 1;
+  // const id = 1;
   const { data, isError, isLoading } = useQuery({
     queryKey: ['fetching-data'],
     queryFn: getTourData,
   });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className='w-full flex justify-center md:h-[700px]'>
+        <span className='loading loading-spinner loading-lg text-primary'></span>
+      </div>
+    );
   }
   if (isError) {
-    return <div>Error: someThing went wrong</div>;
+    return (
+      <div className='w-full flex justify-center md:h-[700px]'>
+        <span>Error: someThing went wrong</span>
+      </div>
+    );
   }
 
   return (
     <div className='max-w-4xl mx-auto p-4'>
-      <Forest />
+      {/* <Forest /> */}
       {data?.map((data: any) => (
         <div
           key={data.id}
@@ -51,7 +59,7 @@ const TourCard = ({ params }: { params: { id?: string } }) => {
             <div className='flex flex-col w-full h-full gap-6'>
               <div className='p-4'>
                 <div className='flex flex-col gap-5'>
-                  <h3>{data.tour.city.province.name}</h3>
+                  <h3>{data.tour.city.name}</h3>
                   <p>3 شب / طبیعت گردی / کمپ / چادر</p>
                   <p>امکانات : غذا / تورلیدر / عکاس</p>
                   <span>
