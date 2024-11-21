@@ -72,12 +72,10 @@ const Navbar: React.FC = () => {
           />
         </Link>
         <Link
-          href=''
+          href='./login-register'
           className='text-sm sm:text-base md:text-lg hover:text-primary'
         >
-          <Link href='./login-register'>
-            <span>ورود /ثبت نام</span>
-          </Link>
+          <span>ورود / ثبت نام</span>
         </Link>
         <Link href='' className='hover:opacity-80'>
           <Image
