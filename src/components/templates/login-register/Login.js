@@ -34,18 +34,15 @@ const Login = ({ showRegisterForm }) => {
           />
         </div>
         <div className='mb-8 flex flex-col justify-center items-center gap-8'>
-          <button
-            onClick={showRegisterForm}
-            className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'
-          >
+          <button className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'>
             ورود با رمز عبور
           </button>
           <div className='flex gap-44 text-xs text-primary'>
             <span>فراموشی رمز</span>
-            <span>ورود با رمز یکبار مصرف</span>
+            <button onClick={showRegisterForm}>ورود با رمز یکبار مصرف</button>
           </div>
         </div>
-       
+
         <span
           className='text-[10px] flex justify-center mb-2'
           style={{ fontWeight: 200 }}
