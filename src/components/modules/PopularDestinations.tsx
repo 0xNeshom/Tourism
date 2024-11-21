@@ -14,11 +14,13 @@ const PopularDestinations: React.FC = () => {
         <div className='h-36 md:h-60 w-full md:w-[492px] rounded-xl relative'>
           <Link href='' className='rounded-xl w-full h-full'>
             <Image
+            loading='lazy'
               src={Banner}
               alt='south'
               className='rounded-xl w-full h-full object-cover'
             />
             <Image
+            loading='lazy'
               src={shadow}
               alt='shadow'
               className='absolute inset-0 w-full h-full rounded-xl object-cover'
@@ -37,6 +39,7 @@ const PopularDestinations: React.FC = () => {
         <div className='h-36 md:h-60 w-full md:w-[492px] rounded-xl relative'>
           <Link href='' className='rounded-xl w-full h-full'>
             <Image
+            loading='lazy'
               src={bg}
               alt='bg'
               className='rounded-xl w-full h-full object-cover'
@@ -56,11 +59,13 @@ const PopularDestinations: React.FC = () => {
       <div className='h-64 md:h-full w-full md:w-[837px] relative'>
         <Link href='' className='rounded-xl w-full h-full'>
           <Image
+          loading='lazy'
             src={bg1}
             alt='bg1'
             className='w-full h-full object-cover rounded-xl'
           />
           <Image
+          loading='lazy'
             src={shadow1}
             alt='shadow'
             className='absolute inset-0 w-full h-full object-cover rounded-xl'

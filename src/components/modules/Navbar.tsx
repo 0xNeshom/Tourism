@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       <div className='flex items-center'>
         <ul className='flex gap-2 items-center'>
           <li>
-            <Link href='/about-us'>
+            <Link href='/'>
               <Image
                 priority={true}
                 width={50}
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href='/about-us'>
+            <Link href='/'>
               <Image
                 priority={true}
                 src={Logo1}

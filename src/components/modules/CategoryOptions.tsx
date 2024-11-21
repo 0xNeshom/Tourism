@@ -25,7 +25,7 @@ const CategoryOptions = () => {
             </li>
           ))}
           <li className='hidden md:block'>
-            <Image src={search} alt='search-icon' />
+            <Image src={search} alt='search-icon' priority={true} />
           </li>
         </ul>
       </div>

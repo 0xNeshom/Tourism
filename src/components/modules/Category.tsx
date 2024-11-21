@@ -35,6 +35,7 @@ const Category: React.FC = () => {
                 alt={category.label} 
                 width={category.width} 
                 height={category.height} 
+                priority={true}
                 className='w-8 xs:w-8 md:w-auto h-auto ' 
               />
               <span className='text-xs xs:text-xs md:text-xl text-center leading-tight'>
