@@ -13,7 +13,6 @@ const Footer = () => {
     <footer className='bg-[#F8F8F8] w-full relative h-full'>
       <div className='bg-[#F8F8F8] py-12 px-8 flex md:gap-72 md:mt-32'>
         <div className='md:mr-12 md:grid hidden sm:grid-cols-2 md:grid-cols-3 md:gap-24 text-center'>
-          {/* Column 1: مقاصد پر تکرار */}
           <div>
             <h3 className='font-medium text-lg md:mb-9'>مقصد های پر تکرار</h3>
             <ul className='space-y-6 text-base font-normal '>
@@ -23,7 +22,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 2: خدمات مشتریان */}
           <div>
             <h3 className='font-medium text-lg md:mb-9'>خدمات مشتریان</h3>
             <ul className='space-y-6 text-base font-normal'>
@@ -33,7 +31,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: ارتباط با ما */}
           <div className='flex flex-col items-center'>
             <h3 className='font-medium text-lg md:mb-9'>ارتباط با ما</h3>
             <ul className='space-y-6 text-base font-normal text-left'>
@@ -77,7 +74,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* SVG Wrapper for Background Color */}
       <div className='flex w-full'>
         <div className='flex flex-col  -bottom-40 w-1/2 absolute xs:z-20    '>
           <p className='text-transparent  bg-clip-text bg-gradient-to-r from-[#7B4794] to-[#01A657] mr-10 hidden md:block'>

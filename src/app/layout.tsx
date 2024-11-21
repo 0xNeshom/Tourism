@@ -1,0 +1,26 @@
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import './globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+const iranSans = localFont({
+  src: '../public/fonts/woff/IRANSansX-Black.woff',
+});
+
+export const metadata: Metadata = {
+  title: 'Safarjoo',
+  description: 'Developed By 0xNeshom',
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang='fa' dir='rtl'>
+      <body className={`${iranSans} antialiased max-w-[1550px] mx-auto`}>
+        {children}
+      </body>
+    </html>
+  );
+}
