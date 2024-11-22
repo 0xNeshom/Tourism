@@ -13,13 +13,11 @@ const FavoriteLocations = () => {
   ];
   return (
     <div>
-      <h3 className='md:text-2xl hidden md:block  md:mr-28 md:mb-10'>
+      <h3 className='md:text-2xl hidden md:block  md:mx-28 md:mb-10' style={{fontWeight:600}}>
         شهر های محبوب رو دیدی ؟
       </h3>
       <div className=' justify-center items-center md:flex  hidden md:mx-14 gap-7  '>
-        {/* <h3 className='text-2xl  md:mr-28 md:mb-10  '>
-          شهر های محبوب رو دیدی ؟
-        </h3> */}
+        
         <div className=' flex justify-center items-center gap-7'>
           <div className=' flex flex-col md:gap-8 justify-center items-center'>
             <div className='border-[1px] border-primary md:p-4 xs:p-2 rounded-3xl relative w-full'>

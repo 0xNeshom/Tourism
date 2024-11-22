@@ -1,21 +1,21 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import forest from '@/public/forest.svg';
-import umbrella from '@/public/umbrella.svg';
-import place from '@/public/Vector 41.svg';
-import group from '@/public/Group.svg';
-import map from '@/public/map.svg';
-import airicon from '@/public/Air Icon 1.svg';
-import luggage from '@/public/luggage.svg';
+import forest from '@/public/category/Frame 1.svg';
+import umbrella from '@/public/category/Frame 1-1.svg';
+import place from '@/public/category/Frame 1-2.svg';
+import group from '@/public/category/Frame 1-3.svg';
+import map from '@/public/category/Frame 1-4.svg';
+import airicon from '@/public/category/Frame 1-5.svg';
+import luggage from '@/public/category/Frame 1-6.svg';
 
 const categories = [
-  { id: 1, href: './tourlist', img: forest, label: 'جنگلی', width: 100, height: 100 },
-  { id: 2, href: './tourlist', img: umbrella, label: 'ساحلی', width: 96, height: 96 },
-  { id: 3, href: './tourlist', img: place, label: 'زیارتی', width: 80, height: 80 },
-  { id: 4, href: './tourlist', img: group, label: 'بومگردی', width: 96, height: 96 },
-  { id: 5, href: './tourlist', img: map, label: 'تاریخی', width: 72, height: 72 },
-  { id: 6, href: './tourlist', img: airicon, label: 'خارجی', width: 80, height: 80 },
-  { id: 7, href: './tourlist', img: luggage, label: 'همه تورها', width: 72, height: 72 },
+  { id: 1, href: './tourlist', img: forest, label: 'جنگلی' },
+  { id: 2, href: './tourlist', img: umbrella, label: 'ساحلی'},
+  { id: 3, href: './tourlist', img: place, label: 'زیارتی'},
+  { id: 4, href: './tourlist', img: group, label: 'بومگردی'},
+  { id: 5, href: './tourlist', img: map, label: 'تاریخی'},
+  { id: 6, href: './tourlist', img: airicon, label: 'خارجی'},
+  { id: 7, href: './tourlist', img: luggage, label: 'همه تورها'},
 ];
 
 const Category: React.FC = () => {
@@ -33,8 +33,7 @@ const Category: React.FC = () => {
               <Image 
                 src={category.img} 
                 alt={category.label} 
-                width={category.width} 
-                height={category.height} 
+            
                 priority={true}
                 className='w-8 xs:w-8 md:w-auto h-auto ' 
               />

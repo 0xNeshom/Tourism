@@ -6,24 +6,24 @@ import Image from 'next/image';
 import logo from '@/public/Logo-login.svg';
 
 const Register = ({ showloginForm }) => {
-  const [step, setStep] = useState(1); // حالت اولیه برای نمایش صفحه وارد کردن شماره
-  const [timer, setTimer] = useState(120); // تایمر اولیه به ثانیه (2 دقیقه)
-  const [canResend, setCanResend] = useState(false); // کنترل وضعیت نمایش دکمه درخواست مجدد
+  const [step, setStep] = useState(1); 
+  const [timer, setTimer] = useState(120); 
+  const [canResend, setCanResend] = useState(false); 
 
-  // کاهش تایمر
+
   useEffect(() => {
     if (step === 2 && timer > 0) {
       const interval = setInterval(() => {
         setTimer((prev) => prev - 1);
       }, 1000);
-      return () => clearInterval(interval); // پاکسازی تایمر
+      return () => clearInterval(interval); 
     }
     if (timer === 0) {
-      setCanResend(true); // نمایش دکمه درخواست مجدد
+      setCanResend(true);
     }
   }, [step, timer]);
 
-  // فرمت نمایش زمان
+
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
@@ -31,21 +31,21 @@ const Register = ({ showloginForm }) => {
   };
 
   const handleSubmitPhone = () => {
-    setStep(2); // تغییر به مرحله بعد
-    setTimer(120); // تنظیم مجدد تایمر
-    setCanResend(false); // مخفی کردن دکمه درخواست مجدد
+    setStep(2); 
+    setTimer(120); 
+    setCanResend(false); 
   };
 
   const handleResendCode = () => {
-    setTimer(120); // ریست کردن تایمر به 2 دقیقه
-    setCanResend(false); // مخفی کردن دکمه درخواست مجدد
-    console.log('کد جدید ارسال شد'); // شبیه‌سازی ارسال کد
+    setTimer(120); 
+    setCanResend(false); 
+    
   };
 
   return (
     <div className='page flex justify-center relative bg-white w-full'>
       {step === 1 && (
-        <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl mt-14'>
+        <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl mt-14 '>
           <div className='container flex flex-col '>
             <Image src={field} alt='' priority={true} />
           </div>
@@ -64,7 +64,7 @@ const Register = ({ showloginForm }) => {
           </div>
           <div className='mb-11 flex flex-col justify-center items-center gap-3'>
             <button
-              onClick={handleSubmitPhone} // تغییر به مرحله بعد
+              onClick={handleSubmitPhone} 
               className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'
             >
               دریافت کد
@@ -139,7 +139,7 @@ const Register = ({ showloginForm }) => {
         </div>
       )}
 
-      <div className='absolute -bottom-56 object-repeat w-full flex justify-center'>
+      <div className='absolute -bottom-24 object-repeat w-full flex justify-center'>
         <Image src={wave} alt='' className='object-cover w-full' />
       </div>
       <div className='absolute top-11 right-9 z-30'>

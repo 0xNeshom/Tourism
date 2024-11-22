@@ -45,7 +45,7 @@ const PopularDestinations: React.FC = () => {
               className='rounded-xl w-full h-full object-cover'
             />
             <div className='absolute w-full h-full flex flex-col items-start justify-center p-2 md:p-4 text-white gap-2 md:gap-4 z-10 bottom-4 md:bottom-11 mx-2 md:mx-5'>
-              <span className='text-base md:text-lg font-medium'>
+              <span className='text-base md:text-lg font-semibold'>
                 تور گردشگری ۷ روزه تاریخی
               </span>
               <span className='text-xs md:text-sm font-light'>
@@ -70,9 +70,9 @@ const PopularDestinations: React.FC = () => {
             alt='shadow'
             className='absolute inset-0 w-full h-full object-cover rounded-xl'
           />
-          <div className='absolute w-full h-full flex flex-col items-start justify-center p-3 md:p-6 text-white gap-2 md:gap-4 z-10 bottom-4 md:bottom-11 mx-2 md:mx-5'>
+          <div className='absolute w-full h-full flex flex-col items-start justify-center p-3 md:p-6 text-white gap-2 md:gap-8 z-10  md:bottom-36 mx-2 md:mx-5'>
             <span className='text-xl md:text-2xl font-semibold'>یه سفر خارجمون نشه ؟</span>
-            <span className='text-xs md:text-sm'>
+            <span className='text-xs md:text-sm font-semibold'>
               یه سفر داریم لس آنجلس اگه نری باخت <br /> دادی ،جمع کن بریم !
             </span>
           </div>

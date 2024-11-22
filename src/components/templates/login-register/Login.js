@@ -50,7 +50,7 @@ const Login = ({ showRegisterForm }) => {
           ورود به سایت به معنای پذیرش قوانین است
         </span>
       </div>
-      <div className='absolute -bottom-56 object-repeat w-full flex justify-center  '>
+      <div className='absolute -bottom-24 object-repeat w-full flex justify-center  '>
         <Image src={wave} alt='' className='object-cover w-full ' />
       </div>
       <div className='absolute top-11 right-9 z-30'>
