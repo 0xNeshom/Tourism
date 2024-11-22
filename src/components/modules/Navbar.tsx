@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '@/public/Logo.svg';
+import Logo from '@/public/Logo/Logo.svg';
 import Logo1 from '@/public/سفرجو.svg';
 import notif from '@/public/Iconly.svg';
 import alarm from '@/public/alarm.svg';

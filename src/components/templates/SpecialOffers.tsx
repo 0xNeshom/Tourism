@@ -63,7 +63,7 @@ const SpecialOffers = () => {
   ];
 
   return (
-    <div className='bg-[#E8F8F5] pt-11 pb-24'>
+    <div className='bg-[#E8F8F5] pt-11 pb-24 mt-24'>
       <div className='flex justify-between mx-28 mb-10'>
         <h2 className='text-2xl font-semibold'>تخفیف‌های ویژه</h2>
         <Link href={''}>
@@ -101,11 +101,11 @@ const SpecialOffers = () => {
                   <div className='gap-3 flex-col flex relative'>
                     <div className='flex justify-between'>
                       <span>مبدا: {tour.origin}</span>
-                      <Image src={origin} alt='origin' />
+                      <Image src={origin} alt='origin'loading='lazy' />
                     </div>
                     <div className='flex ml-1 justify-between'>
                       <span>{tour.comments}</span>
-                      <Image src={comment} alt='comments' />
+                      <Image src={comment} alt='comments'loading='lazy' />
                     </div>
                     <div className='flex ml-1 justify-between'>
                       <span>{tour.rating}</span>
@@ -118,10 +118,10 @@ const SpecialOffers = () => {
           ))}
         </Swiper>
         <button className='custom-swiper-button-next absolute top-1/2 left-4 transform -translate-y-1/2 z-10'>
-          <Image src={next} alt='next' />
+          <Image src={next} alt='next'loading='lazy' />
         </button>
         <button className='custom-swiper-button-prev absolute top-1/2 right-4 transform -translate-y-1/2 z-10'>
-          <Image src={prev} alt='prev' />
+          <Image src={prev} alt='prev' loading='lazy'/>
         </button>
       </div>
     </div>

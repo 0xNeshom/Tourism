@@ -75,8 +75,8 @@ const TourSlider = () => {
           slidesPerView={2.5}
           spaceBetween={32}
           dir='rtl'
-          // autoplay={{ delay: 5000, disableOnInteraction: false }}
-          // loop={true}
+          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          loop={true}
           navigation={{
             nextEl: '.custom-swiper-button-next',
             prevEl: '.custom-swiper-button-prev',
@@ -107,15 +107,15 @@ const TourSlider = () => {
                   <div className='gap-3 flex-col flex relative'>
                     <div className='flex'>
                       <span>مبدا:{tour.origin}</span>
-                      <Image src={origin} alt='origin' />
+                      <Image src={origin} alt='origin' loading='lazy'/>
                     </div>
                     <div className='flex justify-between ml-1'>
                       <span>{tour.comments}</span>
-                      <Image src={comment} alt='origin' />
+                      <Image src={comment} alt='origin' loading='lazy' />
                     </div>
                     <div className='flex justify-between ml-1'>
                       <span>{tour.rating}</span>
-                      <Image src={star} alt='origin' />
+                      <Image src={star} alt='origin' loading='lazy'/>
                     </div>
                   </div>
                 </div>
@@ -126,12 +126,12 @@ const TourSlider = () => {
 
         <div className='custom-swiper-button-next absolute top-1/2 left-4 transform -translate-y-1/2 z-10'>
           <button>
-            <Image src={next} alt='next' />
+            <Image src={next} alt='next' loading='lazy'/>
           </button>
         </div>
         <div className='custom-swiper-button-prev absolute top-1/2 right-4 transform -translate-y-1/2 z-10'>
           <button>
-            <Image src={prev} alt='prev' />
+            <Image src={prev} alt='prev' loading='lazy'/>
           </button>
         </div>
       </div>
