@@ -21,8 +21,8 @@ const FavoriteLocations = () => {
           شهر های محبوب رو دیدی ؟
         </h3> */}
         <div className=' flex justify-center items-center gap-7'>
-          <div className=' flex flex-col md:gap-5 justify-center items-center'>
-            <div className='border-[1px] border-primary md:p-4 xs:p-2 rounded-3xl relative'>
+          <div className=' flex flex-col md:gap-8 justify-center items-center'>
+            <div className='border-[1px] border-primary md:p-4 xs:p-2 rounded-3xl relative w-full'>
               <Link href=''>
                 <Image src={rasht} alt='rasht' />
               </Link>

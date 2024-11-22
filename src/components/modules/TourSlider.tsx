@@ -1,10 +1,14 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Image from 'next/image';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import img from '@/public/isfahan1.svg'
+import img1 from '@/public/Slider/Image-1.svg'
+import img2 from '@/public/Slider/Image-2.svg'
+import img3 from '@/public/Slider/Image-3.svg'
+import img4 from '@/public/Slider/Image-4.svg'
 const TourSlider = () => {
   return (
     <div>
@@ -20,7 +24,7 @@ const TourSlider = () => {
          className="mySwiper articles_slider"
       >
         <SwiperSlide>
-          <img src='https://limoo.host/asstes/img/hosts/down02.png' alt='تصویر 1' />
+          <Image src={img1} alt=''/>
           <h3>عنوان اسلاید</h3>
           <p>توضیحات اسلاید</p>
         </SwiperSlide><SwiperSlide>
