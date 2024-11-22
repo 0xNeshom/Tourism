@@ -8,6 +8,7 @@ import FavoriteDestination from '@/components/modules/FavoriteDestination';
 import FavoriteLocations from '@/components/modules/FavoriteLocations';
 import Footer from '@/components/modules/Footer';
 import TourSlider from '@/components/templates/AbroadTourSlider';
+import SpecialOffers from '@/components/templates/SpecialOffers';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <CategoryOptions />
       <Category />
       <PopularDestinations />
-      
+      <SpecialOffers/>
       <Advertising />
       <FavoriteDestination />
       <TourSlider />
