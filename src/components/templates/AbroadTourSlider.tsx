@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { toPersianDigits } from '@/utilities/persianNumber/persian';
+// import {  } from '@/utilities/persianNumber/persian';
 import Kish from '@/public/Slider/Image-1.svg';
 import Alps from '@/public/Slider/Image-2.svg';
 import Turkey from '@/public/Slider/Image-3.svg';
@@ -16,58 +16,58 @@ import origin from '@/public/Slider/Iconly.svg';
 import comment from '@/public/Slider/Iconly-1.svg';
 import star from '@/public/Slider/Iconly-2.svg';
 import Link from 'next/link';
-const TourSlider = () => {
+const AbroadTourSlider = () => {
   const tours = [
     {
       id: 1,
       title: 'کشور آمریکا',
       destination: 'کشور: آمریکا',
-      price: toPersianDigits(4258000) + ' تومان',
+      price: (4258000) + ' تومان',
       origin: ' تهران',
-      rating: toPersianDigits(4.41),
+      rating: (4.41),
       detail: '5 روزه / آبشار نیاگارا و...',
-      comments: toPersianDigits(136),
+      comments: (136),
       img: US,
     },
     {
       id: 2,
       title: 'کشور ترکیه',
       destination: 'کشور: ترکیه',
-      price: toPersianDigits(3258000) + ' تومان',
+      price: (3258000) + ' تومان',
       origin: ' تهران',
-      rating: toPersianDigits(4.41),
-      detail: '3 روزه / جاذبه‌های گردشگری ترکیه',
-      comments: toPersianDigits(136),
+      rating: (4.41),
+      detail: '3 روزه / ترکیه',
+      comments: (136),
       img: Turkey,
     },
     {
       id: 3,
       title: 'جزیره کیش',
       destination: 'کشور: ایران',
-      price: toPersianDigits(1350000) + ' تومان',
+      price: (1350000) + ' تومان',
       origin: ' تهران',
-      rating: toPersianDigits(4.0),
-      detail: '۳ روزه / سواحل کیش و مراکز خرید',
-      comments: toPersianDigits(90),
+      rating: (4.0),
+      detail: '۳ روزه / سواحل کیش   ',
+      comments: (90),
       img: Kish,
     },
     {
       id: 4,
       title: 'کوه‌های آلپ',
       destination: 'کشور: سوئیس',
-      price: toPersianDigits(5700000) + ' تومان',
+      price: (5700000) + ' تومان',
       origin: ' تهران',
-      rating: toPersianDigits(4.8),
+      rating: (4.8),
       detail: '۶ روزه / کوهنوردی و چشم‌اندازهای طبیعی',
-      comments: toPersianDigits(210),
+      comments: (210),
       img: Alps,
     },
   ];
 
   return (
     <>
-      <div className='flex justify-between mx-28 mb-10'>
-        <h2 className='text-2xl' style={{fontWeight:600}}>تورهای خارج از کشور رو دیدی ؟</h2>
+      <div className='flex justify-between md:mx-28 mx-10 my-10 mb-10'>
+        <h2 className='md:text-2xl text-base' style={{fontWeight:600}}>تورهای خارج از کشور رو دیدی ؟</h2>
         <Link href={""}> <span className='text-primary'>مشاهده بیشتر</span> </Link>
       </div>
       <div className='relative md:mb-48 mb-24'>
@@ -75,7 +75,8 @@ const TourSlider = () => {
           slidesPerView={2.5}
           spaceBetween={32}
           dir='rtl'
-          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          autoplay={{ delay: 1500,
+          disableOnInteraction: false }}
           loop={true}
           navigation={{
             nextEl: '.custom-swiper-button-next',
@@ -83,6 +84,16 @@ const TourSlider = () => {
           }}
           modules={[Navigation]}
           className='mySwiper articles_slider w-[90%]'
+          breakpoints={{
+            0: {
+              spaceBetween: 0, 
+              slidesPerView: 1.2
+            },
+            768: {
+              spaceBetween: 32, 
+              slidesPerView: 2.5, 
+            },
+          }}
         >
           {tours.map((tour) => (
             <SwiperSlide key={tour.id} className='p-4'>
@@ -139,4 +150,4 @@ const TourSlider = () => {
   );
 };
 
-export default TourSlider;
+export default AbroadTourSlider;

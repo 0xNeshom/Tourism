@@ -35,11 +35,11 @@ const FavoriteDestination = () => {
   return (
     <div className='bg-Main  flex md:gap-10 justify-center items-center flex-wrap md:mb-20 '>
       {options.map((e) => (
-        <div key={e.id} className='md:mt-14 xs:mt-7 md:mb-8 xs:mb-4'>
+        <div key={e.id} className='md:mt-14 mt-7 md:mb-8 mb-4'>
           <div>
             <Image src={e.img} alt='south' className=' rounded-xl' />
           </div>
-          <div className='flex justify-center items-center flex-col md:mt-14 xs:mt-7 gap-2'>
+          <div className='flex justify-center items-center flex-col md:mt-14 mt-7 gap-2'>
             <h3 className='text-lg font-semibold'>{e.title}</h3>
             <p className='text-base font-extralight'>{e.description}</p>
             <Link href='' className='md:my-4 xs:my-2 flex gap-2 items-center justify-center'>

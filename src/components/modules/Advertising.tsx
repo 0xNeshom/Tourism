@@ -9,7 +9,7 @@ const Advertising = () => {
         {id:3, title: 'امن و معتبر ' , description:"با خیال راحت بلیت بخر" ,icon:icon3}
     ]
   return (
-    <div className="max-w-full flex gap-14 md:my-20 mx-auto justify-center items-center flex-wrap sm:my-10 xs:my-10">
+    <div className="max-w-full flex gap-14 md:my-20 mx-auto justify-center items-center flex-wrap my-14 ">
         {options.map((e)=>(
             <div key={e.id} className="md:w-80 md:p-12 xs:w-80 flex p-3 shadow-md rounded-md gap-6 items-center justify-center">
                 <Image src={e.icon} alt="Tours"/>

@@ -38,7 +38,7 @@
     "src/app/api/tours/[id]/route.js",
     "src/app/layout.jsx",
     "src/app/(auth)/login-register/page.jsx"
-  ],
+, "src/utilities/persianNumber/persian.ts"  ],
   "exclude": [
     "node_modules"
   ]

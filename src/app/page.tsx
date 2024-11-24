@@ -9,6 +9,7 @@ import FavoriteLocations from '@/components/modules/FavoriteLocations';
 import Footer from '@/components/modules/Footer';
 import TourSlider from '@/components/templates/AbroadTourSlider';
 import SpecialOffers from '@/components/templates/SpecialOffers';
+import AbroadTourSlider from '@/components/templates/AbroadTourSlider';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <SpecialOffers/>
       <Advertising />
       <FavoriteDestination />
-      <TourSlider />
+      <AbroadTourSlider />
       <FavoriteLocations />
       <Footer />
     </>

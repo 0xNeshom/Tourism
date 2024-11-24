@@ -14,13 +14,13 @@ const PopularDestinations: React.FC = () => {
         <div className='h-36 md:h-60 w-full md:w-[492px] rounded-xl relative'>
           <Link href='' className='rounded-xl w-full h-full'>
             <Image
-            loading='lazy'
+              loading='lazy'
               src={Banner}
               alt='south'
               className='rounded-xl w-full h-full object-cover'
             />
             <Image
-            loading='lazy'
+              loading='lazy'
               src={shadow}
               alt='shadow'
               className='absolute inset-0 w-full h-full rounded-xl object-cover'
@@ -39,7 +39,7 @@ const PopularDestinations: React.FC = () => {
         <div className='h-36 md:h-60 w-full md:w-[492px] rounded-xl relative'>
           <Link href='' className='rounded-xl w-full h-full'>
             <Image
-            loading='lazy'
+              loading='lazy'
               src={bg}
               alt='bg'
               className='rounded-xl w-full h-full object-cover'
@@ -59,20 +59,22 @@ const PopularDestinations: React.FC = () => {
       <div className='h-64 md:h-full w-full md:w-[837px] relative'>
         <Link href='' className='rounded-xl w-full h-full'>
           <Image
-          loading='lazy'
+            loading='lazy'
             src={bg1}
             alt='bg1'
             className='w-full h-full object-cover rounded-xl'
           />
           <Image
-          loading='lazy'
+            loading='lazy'
             src={shadow1}
             alt='shadow'
             className='absolute inset-0 w-full h-full object-cover rounded-xl'
           />
-          <div className='absolute w-full h-full flex flex-col items-start justify-center p-3 md:p-6 text-white gap-2 md:gap-8 z-10  md:bottom-36 mx-2 md:mx-5'>
-            <span className='text-xl md:text-2xl font-semibold'>یه سفر خارجمون نشه ؟</span>
-            <span className='text-xs md:text-sm font-semibold'>
+          <div className='absolute md:bottom-40 bottom-12 w-full h-full flex flex-col items-start justify-center p-5 md:p-8 text-white gap-2 md:gap-8 z-10  mx-2 md:mx-5  rounded-xl'>
+            <span className='text-xl md:text-2xl font-semibold'>
+              یه سفر خارجمون نشه ؟
+            </span>
+            <span className='text-xs md:text-sm font-semibold leading-relaxed'>
               یه سفر داریم لس آنجلس اگه نری باخت <br /> دادی ،جمع کن بریم !
             </span>
           </div>
