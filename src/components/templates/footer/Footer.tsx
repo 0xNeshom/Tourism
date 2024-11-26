@@ -24,10 +24,10 @@ const Footer = () => {
 
           <div>
             <h3 className='font-medium text-lg md:mb-9'>خدمات مشتریان</h3>
-            <ul className='space-y-6 text-base font-normal'>
+            <ul className='gap-6 flex flex-col text-base font-normal'>
               <li>سوالات متداول</li>
               <li>مرکز پشتیبانی</li>
-              <li>درباره ما</li>
+              <Link href='./about-us'><span>درباره ما</span></Link>
             </ul>
           </div>
 

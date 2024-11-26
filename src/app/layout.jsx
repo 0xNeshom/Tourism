@@ -1,4 +1,4 @@
-import Footer from '@/components/modules/Footer';
+import Footer from '@/components/templates/footer/Footer';
 import ScrollTop from '@/utilities/scrollToTop/ScrollToTop';
 import './globals.css';
 import localFont from 'next/font/local';
@@ -17,9 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='fa' dir='rtl'>
       <body className={`${iranSans.src} antialiased max-w-[1550px] mx-auto`}>
-        <Provider>
-          {children}
-        </Provider>
+        <Provider>{children}</Provider>
         <ScrollTop />
       </body>
     </html>

@@ -60,6 +60,7 @@ const Navbar: React.FC = () => {
           <Link href=''>
             <span className='hover:text-primary'>پشتیبانی</span>
           </Link>
+          
         </div>
       </div>
       <div className='flex items-center gap-3 sm:gap-5 md:gap-5'>

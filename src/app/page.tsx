@@ -6,7 +6,7 @@ import CategoryOptions from '@/components/modules/CategoryOptions';
 import Advertising from '@/components/modules/Advertising';
 import FavoriteDestination from '@/components/modules/FavoriteDestination';
 import FavoriteLocations from '@/components/modules/FavoriteLocations';
-import Footer from '@/components/modules/Footer';
+import Footer from '@/components/templates/footer/Footer';
 import SpecialOffers from '@/components/templates/SpecialOffers';
 import AbroadTourSlider from '@/components/templates/AbroadTourSlider';
 
@@ -18,7 +18,7 @@ export default function Home() {
       <CategoryOptions />
       <Category />
       <PopularDestinations />
-      <SpecialOffers/>
+      <SpecialOffers />
       <Advertising />
       <FavoriteDestination />
       <AbroadTourSlider />
