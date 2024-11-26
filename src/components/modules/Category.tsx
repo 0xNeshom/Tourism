@@ -21,20 +21,20 @@ const categories = [
 const Category: React.FC = () => {
   return (
     <div className='px-2 justify-center flex'>
-      <div className='md:flex  md:items-center  md:justify-center gap-4 mx-auto md:overflow-auto grid  grid-cols-4 justify-center items-center max-sm:grid-cols-2 max-[413px]:grid-cols-1  '>
+      <div className='flex flex-wrap gap-2 md:gap-7 '>
         {categories.map((category) => (
-          <div key={category.id} className='w-full min-w-[160px] mx-auto '>
+          <div key={category.id} className='mx-auto '>
             <Link
               href={category.href}
-              className='flex flex-col justify-center items-center border border-primary rounded-xl mx-auto xs:rounded-3xl
-                w-20 h-20 xs:w-20 xs:h-20 md:w-40 md:h-44 
-                gap-0.5 xs:gap-1 md:gap-2 md:pb-2'
+              className='flex flex-col justify-center gap items-center border border-primary rounded-xl mx-auto xs:rounded-3xl
+                w-20 h-24 md:w-40 md:h-44 
+                md:gap-2 pb-2'
             >
               <Image
                 src={category.img}
                 alt={category.label}
                 priority={true}
-                className='min-w-8  md:w-auto h-auto '
+                className='  md:w-auto h-auto '
               />
               <span className='text-xs xs:text-xs md:text-xl text-center leading-tight'>
                 {category.label}
