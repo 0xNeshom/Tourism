@@ -1,4 +1,5 @@
 import Footer from '@/components/templates/footer/Footer';
+import Head from 'next/head';
 import ScrollTop from '@/utilities/scrollToTop/ScrollToTop';
 import './globals.css';
 import localFont from 'next/font/local';
@@ -13,10 +14,14 @@ const iranSans = localFont({
     { path: '../public/fonts/IRANSansX-Thin.woff2' },
   ],
 });
+
 export default function RootLayout({ children }) {
   return (
     <html lang='fa' dir='rtl'>
-      <body className={`${iranSans.src} antialiased max-w-[1550px] mx-auto`}>
+      <Head>
+      <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-Variable-font-face.css" rel="stylesheet" type="text/css" />
+      </Head>
+      <body className={` antialiased max-w-[1550px] mx-auto`} >
         <Provider>{children}</Provider>
         <ScrollTop />
       </body>
