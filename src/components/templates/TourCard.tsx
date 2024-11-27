@@ -24,7 +24,7 @@ const TourCard = ({ params }: { params: { id?: string } }) => {
 
   if (isLoading) {
     return (
-      <div className='w-full flex justify-center md:h-[700px]'>
+      <div className='w-full flex justify-center md:h-[700px] h-[700px]'>
         <span className='loading loading-spinner loading-lg text-primary'></span>
       </div>
     );
