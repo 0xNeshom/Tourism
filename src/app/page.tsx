@@ -1,14 +1,14 @@
-import Navbar from '@/components/modules/Navbar';
-import Header from '@/components/modules/Header';
-import Category from '@/components/modules/Category';
-import PopularDestinations from '@/components/modules/PopularDestinations';
-import CategoryOptions from '@/components/modules/CategoryOptions';
-import Advertising from '@/components/modules/Advertising';
-import FavoriteDestination from '@/components/modules/FavoriteDestination';
-import FavoriteLocations from '@/components/modules/FavoriteLocations';
-import Footer from '@/components/templates/footer/Footer';
-import SpecialOffers from '@/components/templates/SpecialOffers';
-import AbroadTourSlider from '@/components/templates/AbroadTourSlider';
+import Navbar from '@/components/navbar/Navbar';
+import Header from '@/components/main/Header';
+import Category from '@/components/main/Category';
+import PopularDestinations from '@/components/main/PopularDestinations';
+import CategoryOptions from '@/components/main/CategoryOptions';
+import Advertising from '@/components/main/Advertising';
+import FavoriteDestination from '@/components/main/FavoriteDestination';
+import FavoriteLocations from '@/components/main/FavoriteLocations';
+import Footer from '@/components/footer/Footer';
+import SpecialOffers from '@/components/main/SpecialOffers';
+import AbroadTourSlider from '@/components/main/AbroadTourSlider';
 
 export default function Home() {
   return (

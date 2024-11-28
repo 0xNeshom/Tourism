@@ -1,10 +1,10 @@
-import AboutUs from "@/components/templates/AboutUs"
-const page:React.FC = () => {
+import AboutUs from '@/components/aboutUs/AboutUs';
+const page: React.FC = () => {
   return (
     <div>
-      <AboutUs/>
+      <AboutUs />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -2,7 +2,7 @@ import './globals.css';
 import localFont from 'next/font/local';
 import Provider from '@/utilities/reactQueryProvider/ReactQuery';
 import ScrollTop from '@/utilities/scrollToTop/ScrollToTop';
-import Footer from '@/components/templates/footer/Footer';
+import Footer from '@/components/footer/Footer';
 
 export const metadata = {
   title: 'سفرجو',
