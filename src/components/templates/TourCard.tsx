@@ -39,7 +39,7 @@ const TourCard = ({ params }: { params: { id?: string } }) => {
 
   return (
     <div className='max-w-4xl mx-auto p-4'>
-      {/* <Forest /> */}
+
       {data?.map((data: any) => (
         <div
           key={data.id}
