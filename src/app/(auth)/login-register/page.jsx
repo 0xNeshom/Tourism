@@ -3,8 +3,10 @@ import React from 'react';
 
 import { useState } from 'react';
 import { authTypes } from '@/utilities/constants.js';
-import Login from '@/components/templates/login-register/Login.js';
-import Register from '@/components/templates/login-register/Register';
+import { useDispatch,useSelector } from 'react-redux';
+import {login} from '@/redux/reducer'
+import Login from '@/components/login-register/Login';
+import Register from '@/components/login-register/Register';
 const Page = () => {
   const [authType, setAuthType] = useState(authTypes.LOGIN);
 
