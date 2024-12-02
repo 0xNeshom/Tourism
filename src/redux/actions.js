@@ -1,4 +1,3 @@
-// userActions.js
 import { LOGIN, LOGOUT, SET_ROLE } from './actionTypes';
 
 export const login = (user, role) => ({

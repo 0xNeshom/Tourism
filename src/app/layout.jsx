@@ -13,6 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='fa' dir='rtl'>
+      <head>
+        <link rel='icon' href='favicon.ico' type='image/png' />
+      </head>
       <body className='antialiased max-w-[1550px] mx-auto'>
         <ReduxProvider>
           <Provider>{children}</Provider>

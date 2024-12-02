@@ -1,4 +1,3 @@
-// userReducer.js
 import { LOGIN, LOGOUT, SET_ROLE } from './actionTypes';
 
 const initialState = {

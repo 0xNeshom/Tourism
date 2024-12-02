@@ -1,3 +1,4 @@
+'use client';
 import Navbar from '@/components/navbar/Navbar';
 import Header from '@/components/main/Header';
 import Category from '@/components/main/Category';
@@ -9,11 +10,16 @@ import FavoriteLocations from '@/components/main/FavoriteLocations';
 import Footer from '@/components/footer/Footer';
 import SpecialOffers from '@/components/main/SpecialOffers';
 import AbroadTourSlider from '@/components/main/AbroadTourSlider';
-
+import { useSelector } from 'react-redux';
+import NavbarProvider from '@/context/NavbarProvider';
 export default function Home() {
+  const userState = useSelector((state: any) => state.user || {});
+  const { user=null, role=null } = useSelector((state: any) => state.user) || {};
   return (
     <>
-      <Navbar />
+      <NavbarProvider user={user} role={role}>
+        <Navbar />
+      </NavbarProvider>
       <Header />
       <CategoryOptions />
       <Category />

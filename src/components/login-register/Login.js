@@ -28,9 +28,9 @@ const Login = ({ showRegisterForm }) => {
       dispatch(login(user, role));
       console.log('Logged in as regular user');
 
-      router.push('/')
+      router.push('/');
     }
-    
+
     setName('');
     setPassword('');
   };
@@ -44,7 +44,8 @@ const Login = ({ showRegisterForm }) => {
         <div className='mt-10 flex flex-col justify-center items-center gap-3'>
           <h3 className='text-xl'>ورود با رمز عبور</h3>
           <p className='text-xs' style={{ fontWeight: 100 }}>
-            سلام ! برای ورود به سفر‌جو شماره موبایل و یا ایمیل خود را وارد کنید .
+            سلام ! برای ورود به سفر‌جو شماره موبایل و یا ایمیل خود را وارد کنید
+            .
           </p>
         </div>
         <div className='flex flex-col items-center justify-center mt-14 mb-8 gap-6'>
@@ -58,7 +59,7 @@ const Login = ({ showRegisterForm }) => {
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            type='password'  
+            type='password'
             placeholder='رمز عبور'
             className='justify-center flex bg-[#F8F8F8] outline-none w-3/5 pr-3 h-[42px] appearance-none rounded-md placeholder-black text-xs'
           />
@@ -75,7 +76,10 @@ const Login = ({ showRegisterForm }) => {
             <button onClick={showRegisterForm}>ورود با رمز یکبار مصرف</button>
           </div>
         </div>
-        <span className='text-[10px] flex justify-center mb-2' style={{ fontWeight: 200 }}>
+        <span
+          className='text-[10px] flex justify-center mb-2'
+          style={{ fontWeight: 200 }}
+        >
           ورود به سایت به معنای پذیرش قوانین است
         </span>
       </div>

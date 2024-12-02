@@ -1,13 +1,14 @@
 // /pages/tour-list.tsx
 import React from 'react';
-import TourCard from '@/components/TourCard';
+import TourCard from '@/components/tourList/TourCard';
+import TourCardMock from '@/components/tourList/TourCardMock';
 import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 const TourList: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <TourCard params={{ id: '' }} />
+      <TourCard />
       <Footer />
     </div>
   );

@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -22,9 +18,7 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "target": "ES2017"
   },
@@ -37,9 +31,9 @@
     "src/utilities/ReactQuery.ts",
     "src/app/api/tours/[id]/route.js",
     "src/app/layout.jsx",
-    "src/app/(auth)/login-register/page.jsx"
-, "src/utilities/persianNumber/persian.ts"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "src/app/(auth)/login-register/page.jsx",
+    "src/utilities/persianNumber/persian.ts",
+    "src/components/tourList/TourCard.jsx"
+  ],
+  "exclude": ["node_modules"]
 }

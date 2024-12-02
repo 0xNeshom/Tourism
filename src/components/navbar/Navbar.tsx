@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '@/public/Logo/Logo.svg';
@@ -6,8 +7,12 @@ import notif from '@/public/navbar/Iconly.svg';
 import alarm from '@/public/navbar/alarm.svg';
 import enter from '@/public/navbar/enter.svg';
 import profile from '@/public/navbar/profile.svg';
-
+import { useDispatch, useSelector } from 'react-redux';
+// import { useNavbarContext } from '@/context/NavbarProvider';
 const Navbar: React.FC = () => {
+  const dispatch = useDispatch();
+
+  // const {user ,role } = useNavbarContext();
   return (
     <nav className='w-full px-4 sm:px-8 md:px-16 py-4 md:h-20 flex items-center justify-between'>
       <div className='flex items-center'>
@@ -72,13 +77,19 @@ const Navbar: React.FC = () => {
             className='hover:opacity-80'
           />
         </Link>
-        <Link
-          href='./login-register'
-          className='text-xs md:text-lg hover:text-primary'
-          style={{fontWeight:600}}
-        >
-          <span>ورود / ثبت نام</span>
-        </Link>
+         {/* {user ? (
+          <span className='text-xs md:text-lg hover:text-primary font-semibold'>
+            {user.name || 'کاربر'}
+          </span>
+        ) : (
+          <Link
+            href='./login-register'
+            className='text-xs md:text-lg hover:text-primary'
+            style={{ fontWeight: 600 }}
+          >
+            <span>ورود / ثبت نام</span>
+          </Link>
+        )} */}
         <Link href='' className='hover:opacity-80 w-5 items-center md:block'>
           <Image
             priority={true}
