@@ -1,15 +1,14 @@
-// /pages/tour-list.tsx
-import React from 'react';
+
 import TourCard from '@/components/tourList/TourCard';
 import TourCardMock from '@/components/tourList/TourCardMock';
 import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
+import Filter from '@/components/tourList/Filter';
 const TourList: React.FC = () => {
   return (
-    <div>
-      <Navbar />
+    <div className='flex bg-slate-50'>
+      <Filter/>
       <TourCard />
-      <Footer />
     </div>
   );
 };

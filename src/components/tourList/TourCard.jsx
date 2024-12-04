@@ -18,33 +18,42 @@ import tourPhoto from '@/public/tourList/image.png';
 
 const TourCard = () => {
   // data fetcher
-  // const { data, isError, isLoading } = useQuery({
-  //   queryKey: ['fetching-data'],
-  //   queryFn: getTourData,
-  // });
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ['fetching-data'],
+    queryFn: getTourData,
+  });
 
-  // if (isLoading) {
-  //   return (
-  //     <div className='w-full flex justify-center md:h-[700px] h-[700px]'>
-  //       <span className='loading loading-spinner loading-lg text-primary'></span>
-  //     </div>
-  //   );
-  // }
-  // if (isError) {
-  //   return (
-  //     <div className='w-full flex justify-center md:h-[700px]'>
-  //       <span>Error: someThing went wrong</span>
-  //     </div>
-  //   );
-  // }
+  if (isLoading) {
+    return (
+      <div className='w-full flex justify-center md:h-[700px] h-[700px]'>
+        <span className='loading loading-spinner loading-lg text-primary'></span>
+      </div>
+    );
+  }
+  if (isError) {
+    return (
+      <div className='w-full flex justify-center md:h-[700px]'>
+        <span>Error: someThing went wrong</span>
+      </div>
+    );
+  }
 
   return (
-    <div className='max-w-4xl mx-auto p-4'>
-      {tourData?.map((data) => (
+    
+    <div className='max-w-4xl mx-auto p-4 flex flex-col items-center '>
+      <div className='sorting flex gap-8 justify-center'>
+        <p className='text-[20px] ml-7' style={{fontWeight:400}}> مرتب سازی براساس :</p>
+        <button>پیشنهاد سفرجو</button>
+        <button>پر فروش ها</button>
+        <button>گرانترین</button>
+        <button>ارزانترین</button>
+        <button>تاریخ های نزدیک</button>
+      </div>
+      {data?.map((data) => (
         <div
           key={data.id}
-          className='bg-white rounded-xl shadow-lg overflow-hidden rtl text-base md:w-[821px] my-8'>
-          <div className='flex flex-col md:flex-row items-center w-full gap-6'>
+          className='bg-white rounded-xl shadow-lg overflow-hidden rtl text-base md:w-[821px] my-8 justify-center '>
+          <div className='flex flex-col md:flex-row items-center w-full gap-6 justify-center'>
             <div className=' h-full relative rounded-md overflow-hidden mr-3 my-3'>
               <Image
                 src={tourPhoto}
@@ -57,7 +66,7 @@ const TourCard = () => {
             <div className='flex flex-col w-full h-full gap-6'>
               <div className='p-4'>
                 <div className='flex flex-col gap-5'>
-                  <h3>{data.tour.city.name}</h3>
+                  <h3>{data.tour_title}</h3>
                   <p>3 شب / طبیعت گردی / کمپ / چادر</p>
                   <p>امکانات : غذا / تورلیدر / عکاس</p>
                   <span>
