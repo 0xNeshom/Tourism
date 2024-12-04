@@ -1,18 +1,23 @@
-'use client'
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from '@/redux/actions';
 import Logo from '@/public/Logo/Logo.svg';
 import Logo1 from '@/public/navbar/سفرجو.svg';
 import notif from '@/public/navbar/Iconly.svg';
 import alarm from '@/public/navbar/alarm.svg';
 import enter from '@/public/navbar/enter.svg';
 import profile from '@/public/navbar/profile.svg';
-import { useDispatch, useSelector } from 'react-redux';
-// import { useNavbarContext } from '@/context/NavbarProvider';
-const Navbar: React.FC = () => {
-  const dispatch = useDispatch();
 
-  // const {user ,role } = useNavbarContext();
+const Navbar = () => {
+  const dispatch = useDispatch();
+  const { user } = useSelector((state) => state);
+
+  const handleLogout = () => {
+    dispatch(logout());
+  };
+
   return (
     <nav className='w-full px-4 sm:px-8 md:px-16 py-4 md:h-20 flex items-center justify-between'>
       <div className='flex items-center'>
@@ -65,22 +70,21 @@ const Navbar: React.FC = () => {
           <Link href=''>
             <span className='hover:text-primary'>پشتیبانی</span>
           </Link>
-          
         </div>
       </div>
       <div className='flex items-center gap-3 sm:gap-5 md:gap-5'>
-        <Link href='' className='hidden md:block'>
-          <Image
-            priority={true}
-            src={profile}
-            alt='profile'
-            className='hover:opacity-80'
-          />
-        </Link>
-         {/* {user ? (
-          <span className='text-xs md:text-lg hover:text-primary font-semibold'>
-            {user.name || 'کاربر'}
-          </span>
+        {user ? (
+          <>
+            <span className='text-xs md:text-lg hover:text-primary font-semibold'>
+              {user.name || 'کاربر'}
+            </span>
+            <button
+              onClick={handleLogout}
+              className='text-xs md:text-lg text-red-500 hover:text-red-700'
+            >
+              خروج
+            </button>
+          </>
         ) : (
           <Link
             href='./login-register'
@@ -89,7 +93,7 @@ const Navbar: React.FC = () => {
           >
             <span>ورود / ثبت نام</span>
           </Link>
-        )} */}
+        )}
         <Link href='' className='hover:opacity-80 w-5 items-center md:block'>
           <Image
             priority={true}

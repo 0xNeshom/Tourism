@@ -11,15 +11,13 @@ import Footer from '@/components/footer/Footer';
 import SpecialOffers from '@/components/main/SpecialOffers';
 import AbroadTourSlider from '@/components/main/AbroadTourSlider';
 import { useSelector } from 'react-redux';
-import NavbarProvider from '@/context/NavbarProvider';
 export default function Home() {
   const userState = useSelector((state: any) => state.user || {});
-  const { user=null, role=null } = useSelector((state: any) => state.user) || {};
+  const { user = null, role = null } =
+    useSelector((state: any) => state.user) || {};
   return (
     <>
-      <NavbarProvider user={user} role={role}>
-        <Navbar />
-      </NavbarProvider>
+      <Navbar />
       <Header />
       <CategoryOptions />
       <Category />
