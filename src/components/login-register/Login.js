@@ -93,7 +93,7 @@ const Login = ({ showRegisterForm }) => {
       <div className='absolute bottom-0 object-repeat w-full flex justify-center'>
         <Image src={wave} alt='' className='object-cover w-full' />
       </div>
-      <div className='absolute top-11 right-9 z-30'>
+      <div className='absolute top-1 right-10 z-30'>
         <Image src={logo} alt='' />
       </div>
     </div>

@@ -19,9 +19,7 @@ const config: Config = {
       screens: {
         'xs': '480px',
       },
-      fontFamily: {
-        iranSans: ['IRANSansX-Black', 'sans-serif'], 
-      },
+     
     },
   },
   plugins: [require('daisyui'),

@@ -6,7 +6,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Filter from '@/components/tourList/Filter';
 const TourList: React.FC = () => {
   return (
-    <div className='flex bg-slate-50'>
+    <div className='flex bg-slate-50 justify-center'>
       <Filter/>
       <TourCard />
     </div>

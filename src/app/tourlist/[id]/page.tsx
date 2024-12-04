@@ -8,12 +8,10 @@ import Footer from '@/components/footer/Footer';
 const page = () => {
   return (
     <div>
-      <Navbar />
       <div className='mx-[85px]'>
         <Gisoom />
         <TourDetails />
       </div>
-      <Footer />
     </div>
   );
 };

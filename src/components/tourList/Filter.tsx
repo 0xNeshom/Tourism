@@ -29,7 +29,7 @@ const Filter = () => {
   // };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto bg-white rounded-lg shadow-lg">
+    <div className="p-6 max-w-4xl mx-auto bg-white rounded-lg shadow-lg w-[492px]">
       <div className="flex justify-between items-center mb-6">
         <span className="text-xl font-semibold">فیلتر کردن</span>
         <button className="text-green-500">حذف فیلتر ها</button>

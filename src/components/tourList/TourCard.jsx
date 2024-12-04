@@ -40,7 +40,7 @@ const TourCard = () => {
 
   return (
     
-    <div className='max-w-4xl mx-auto p-4 flex flex-col items-center '>
+    <div className=' mx-auto flex flex-col items-center '>
       <div className='sorting flex gap-8 justify-center'>
         <p className='text-[20px] ml-7' style={{fontWeight:400}}> مرتب سازی براساس :</p>
         <button>پیشنهاد سفرجو</button>
