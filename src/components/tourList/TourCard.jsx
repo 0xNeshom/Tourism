@@ -6,7 +6,7 @@ import { toPersianDigits } from '@/utilities/persianNumber/persian';
 import Link from 'next/link';
 import Forest from './Forest';
 import tourData from '@/data/tourData.json';
-import tourPhoto from '@/public/tourList/image.png';
+import tourPhoto from '@/public/tourList/Vector.svg';
 // interface TripData {
 //   id: number;
 //   title: string;
@@ -40,7 +40,7 @@ const TourCard = () => {
 
   return (
     
-    <div className=' mx-auto flex flex-col items-center '>
+    <div className=' mx-auto flex flex-col items-center mt-16 '>
       <div className='sorting flex gap-8 justify-center'>
         <p className='text-[20px] ml-7' style={{fontWeight:400}}> مرتب سازی براساس :</p>
         <button>پیشنهاد سفرجو</button>
@@ -58,12 +58,12 @@ const TourCard = () => {
               <Image
                 src={tourPhoto}
                 alt=''
-                width={288}
-                height={600}
-                className=' '
+                width={280}
+                height={280}
+                className='object-cover '
               />
             </div>
-            <div className='flex flex-col w-full h-full gap-6'>
+            <div className='flex flex-col w-[511px] h-full gap-6'>
               <div className='p-4'>
                 <div className='flex flex-col gap-5'>
                   <h3>{data.tour_title}</h3>
@@ -77,11 +77,11 @@ const TourCard = () => {
 
                 <div></div>
               </div>
-              <div className='ml-5 my-3'>
+              <div className='ml-5  mt-5'>
                 <div className='w-full bg-primary text-white flex rounded-md'>
                   <Link href={`/tourlist/${data.id}`} className='w-full'>
                     <button
-                      className='w-full h-[42px] flex items-center justify-center'
+                      className='w-full  h-[42px] flex items-center justify-center'
                       style={{ height: '42px' }}
                     >
                       مشاهده و رزرو

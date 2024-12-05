@@ -34,6 +34,6 @@
     "src/app/(auth)/login-register/page.jsx",
     "src/utilities/persianNumber/persian.ts",
     "src/components/tourList/TourCard.jsx"
-, "src/redux/reducer.js", "src/redux/store.js", "src/redux/actionTypes.js", "src/components/navbar/Navbar.jsx"  ],
+, "src/redux/reducer.js", "src/redux/store.js", "src/redux/actionTypes.js", "src/components/navbar/Navbar.jsx", "src/components/pannel/ReservationChart.tsx"  ],
   "exclude": ["node_modules"]
 }

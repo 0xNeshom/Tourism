@@ -5,6 +5,7 @@ const layout = ({ children }: any) => {
   return (
     <div>
       <Navbar />
+      <h1>تخفیف های ويژه</h1>
       {children}
       <Footer />
     </div>

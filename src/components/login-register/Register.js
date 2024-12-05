@@ -43,11 +43,17 @@ const Register = ({ showloginForm }) => {
   };
 
   return (
-    <div className='page flex justify-center relative bg-white w-full'>
+    <div className='page flex justify-center items-center relative bg-white w-full min-h-screen overflow-hidden'>
       {step === 1 && (
-        <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl mt-14 '>
-          <div className='container flex flex-col '>
-            <Image src={field} alt='' priority={true} />
+        <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl h-[100%]'>
+          <div className='container relative w-full h-40 sm:h-48 md:h-56 lg:h-64'>
+            <Image
+              src={field}
+              alt=''
+              priority={true}
+              className='w-full h-40 object-cover'
+              style={{ height: '100%' }}
+            />
           </div>
           <div className='mt-10 flex flex-col justify-center items-center gap-3'>
             <h3 className='text-xl'>ورود یا ثبت نام</h3>
@@ -55,23 +61,23 @@ const Register = ({ showloginForm }) => {
               سلام ! برای ورود به سفر‌جو شماره موبایل یا ایمیل خود را وارد کنید.
             </p>
           </div>
-          <div className='flex justify-center my-14'>
+          <div className='flex justify-center mt-14 mb-8'>
             <input
               type='text'
               placeholder='شماره موبایل'
-              className=' justify-center flex bg-[#F8F8F8] outline-none w-3/5 pr-3 h-[42px] appearance-none rounded-md placeholder-black text-xs'
+              className='justify-center flex bg-[#F8F8F8] outline-none w-3/5 pr-3 h-[42px] appearance-none rounded-md placeholder-black text-xs'
             />
           </div>
-          <div className='mb-11 flex flex-col justify-center items-center gap-3'>
+          <div className='mb-8 flex flex-col justify-center items-center gap-3'>
             <button
-              onClick={handleSubmitPhone} 
-              className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'
+              onClick={handleSubmitPhone}
+              className='bg-primary text-white w-3/5 rounded-md h-[42px] text-sm'
             >
               دریافت کد
             </button>
             <button
               onClick={showloginForm}
-              className='border-[1px] border-primary w-[380px] rounded-md h-[42px] text-sm text-primary'
+              className='border-[1px] border-primary w-3/5 rounded-md h-[42px] text-sm text-primary'
             >
               ورود با رمز عبور
             </button>
@@ -84,11 +90,17 @@ const Register = ({ showloginForm }) => {
           </span>
         </div>
       )}
-
+  
       {step === 2 && (
-        <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl mt-14'>
-          <div className='container flex flex-col '>
-            <Image src={field} alt='' priority={true} />
+        <div className='flex flex-col justify-center bg-white rounded-xl z-10 shadow-xl h-[100%]'>
+          <div className='container relative w-full h-40 sm:h-48 md:h-56 lg:h-64'>
+            <Image
+              src={field}
+              alt=''
+              priority={true}
+              className='w-full h-40 object-cover'
+              style={{ height: '100%' }}
+            />
           </div>
           <div className='mt-10 flex flex-col justify-center items-center gap-8'>
             <h3 className='text-xl'>کد را وارد کنید</h3>
@@ -96,7 +108,7 @@ const Register = ({ showloginForm }) => {
               شماره موبایل را اشتباه وارد کرده‌اید؟ اصلاح کنید.
             </p>
           </div>
-          <div className='flex justify-center my-5 gap-2'>
+          <div className='flex justify-center mt-5 mb-5 gap-2'>
             {Array(4)
               .fill('')
               .map((_, index) => (
@@ -108,11 +120,11 @@ const Register = ({ showloginForm }) => {
                 />
               ))}
           </div>
-          <div className='mb-11 flex flex-col justify-center items-center gap-3'>
+          <div className='mb-8 flex flex-col justify-center items-center gap-3'>
             {canResend ? (
               <button
                 onClick={handleResendCode}
-                className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'
+                className='bg-primary text-white w-3/5 rounded-md h-[42px] text-sm'
               >
                 درخواست مجدد کد
               </button>
@@ -124,22 +136,22 @@ const Register = ({ showloginForm }) => {
                 >
                   {formatTime(timer)} تا درخواست مجدد
                 </span>
-                <button className='bg-primary text-white w-[380px] rounded-md h-[42px] text-sm'>
+                <button className='bg-primary text-white w-3/5 rounded-md h-[42px] text-sm'>
                   ورود
                 </button>
               </>
             )}
             <button
               onClick={showloginForm}
-              className='border-[1px] border-primary w-[380px] rounded-md h-[42px] text-sm text-primary'
+              className='border-[1px] border-primary w-3/5 rounded-md h-[42px] text-sm text-primary'
             >
               ورود با رمز عبور
             </button>
           </div>
         </div>
       )}
-
-      <div className='absolute -bottom-24 object-repeat w-full flex justify-center'>
+  
+      <div className='absolute bottom-0 object-repeat w-full flex justify-center'>
         <Image src={wave} alt='' className='object-cover w-full' />
       </div>
       <div className='absolute top-11 right-9 z-30'>
@@ -147,6 +159,7 @@ const Register = ({ showloginForm }) => {
       </div>
     </div>
   );
+  
 };
 
 export default Register;

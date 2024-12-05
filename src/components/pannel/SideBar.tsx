@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import LogoPannel from '@/public/Logo.svg';
 import Image from 'next/image';
 import iconly0 from '@/public/dashboard/Iconly.svg';
@@ -13,8 +14,10 @@ import iconly8 from '@/public/dashboard/Iconly2.svg';
 import Link from 'next/link';
 
 const SideBar = () => {
+  const [activeId, setActiveId] = useState(1); 
+
   const data = [
-    { id: 1, img: iconly0, title: 'داشبورد', href: '/dashboard' },
+    { id: 1, img: iconly0, title: 'داشبورد', href: '/crm' },
     { id: 2, img: iconly1, title: 'نظرات', href: '/reviews' },
     { id: 3, img: iconly2, title: 'کاربران', href: '/users' },
     { id: 4, img: iconly3, title: 'تورها', href: '/tours' },
@@ -25,26 +28,36 @@ const SideBar = () => {
   ];
 
   return (
-    <div className='w-[310px] shadow-xl my-10 mr-11'>
+    <div className='w-[310px] shadow-xl my-10 sticky top-0 mr-[46px]'>
       <Image src={LogoPannel} alt='logo' />
-      <div className='flex flex-col text-base '>
+      <div className='flex flex-col text-base'>
         {data.map((item) => (
-          <div
-            key={item.id}
-            className='flex items-center  py-5 gap-6  mr-4 '
-            style={{ fontWeight: 500 }}
-          >
-            <Image src={item.img} alt={item.title} width={20} height={20} />
-            <Link href={item.href}>
-              <button className=' hover:text-blue-500'>{item.title}</button>
-            </Link>
-          </div>
+          <Link href={item.href} key={item.id}>
+            <div
+              onClick={() => setActiveId(item.id)}
+              className={`flex items-center py-4 px-4 gap-5 w-full rounded-l-lg cursor-pointer ${
+                activeId === item.id ? 'bg-[#D8BFD829] border-l-8 border-purple-900 ' : ''
+              }`}
+              style={{ fontWeight: 500 }}
+            >
+              <Image src={item.img} alt={item.title} width={20} height={20} />
+              <span
+                className={`${
+                  activeId === item.id ? 'text-[#7B4794]' : ''
+                }`}
+              >
+                {item.title}
+              </span>
+            </div>
+          </Link>
         ))}
-        <Link href={''} className='flex items-center  gap-6 mt-20 mb-8  mr-4 '>
-          <Image src={iconly8} alt='' width={20} height={20}/>
-          <button className='text-base hover:text-blue-500 '>
-            خروج از حساب کاربری
-          </button>
+        <Link href={''} className='mt-10 mb-8'>
+          <div className='flex items-center gap-5 px-4 w-full py-4 hover:bg-[#D8BFD829] rounded-lg'>
+            <Image src={iconly8} alt='' width={20} height={20} />
+            <span className='text-base hover:text-blue-500'>
+              خروج از حساب کاربری
+            </span>
+          </div>
         </Link>
       </div>
     </div>

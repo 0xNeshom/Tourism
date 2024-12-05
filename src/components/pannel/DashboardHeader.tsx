@@ -23,7 +23,7 @@ const DashboardHeader = () => {
   const clock = toPersianDigits(dayjs().format('HH:mm'));
 
   return (
-    <div className='h-14 w-[838px] mx-auto mt-10 mb-5 shadow-xl relative items-center flex'>
+    <div className='h-14 w-[838px] mx-auto mt-10 mb-5 shadow-md relative items-center flex'>
       <p className='items-center mx-auto'>
         به پنل مدیریت سفرجو خوش آمدید، امروز
         <span style={{ color: '#7B4794' }}>{date}</span> و ساعت

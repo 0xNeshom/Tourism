@@ -3,7 +3,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Header from '@/components/main/Header';
 import Category from '@/components/main/Category';
 import PopularDestinations from '@/components/main/PopularDestinations';
-import CategoryOptions from '@/components/main/CategoryOptions';
+import CategoryOptions from '@/components/main/Search';
 import Advertising from '@/components/main/Advertising';
 import FavoriteDestination from '@/components/main/FavoriteDestination';
 import FavoriteLocations from '@/components/main/FavoriteLocations';
@@ -11,6 +11,7 @@ import Footer from '@/components/footer/Footer';
 import SpecialOffers from '@/components/main/SpecialOffers';
 import AbroadTourSlider from '@/components/main/AbroadTourSlider';
 import { useSelector } from 'react-redux';
+import Search from '@/components/main/Search';
 export default function Home() {
   const userState = useSelector((state: any) => state.user || {});
   const { user = null, role = null } =
@@ -19,7 +20,7 @@ export default function Home() {
     <>
       <Navbar />
       <Header />
-      <CategoryOptions />
+      <Search />
       <Category />
       <PopularDestinations />
       <SpecialOffers />

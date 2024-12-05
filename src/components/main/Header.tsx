@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useQuery } from 'react-query';
-import { getBanner } from '@/utilities/actions/BannerFetch';
+import { getBanner } from '@/utilities/actions/home/Banner/BannerFetch';
 
 const Banner: React.FC = () => {
   const { data, isLoading, isError } = useQuery({
@@ -11,15 +11,19 @@ const Banner: React.FC = () => {
 
   if (isLoading) {
     return (
-        <div className='w-full flex justify-center md:h-[700px] h-[700px]'>
-          <span className='skeleton w-[1296px] h-[505px]'></span>
+        <div className='w-full flex justify-center h-[155px] mb-5 mx-4  md:h-[505px]'>
+          <span className='skeleton w-[90%] md:w-[1296px] md:h-[505px]'></span>
         </div>
       );
   }
 
   if (isError) {
-    return <p>Failed to load banner. Please try again later.</p>;
-  }
+    return (
+      <div className='w-full flex justify-center h-[155px] mb-5 mx-4  md:h-[505px]'>
+        <span className='skeleton w-[90%] md:w-[1296px] md:h-[505px]'></span>
+      </div>
+    );
+  };
 
  
   return (
