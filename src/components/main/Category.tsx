@@ -9,13 +9,13 @@ import airicon from '@/public/category/Frame 1-5.svg';
 import luggage from '@/public/category/Frame 1-6.svg';
 
 const categories = [
-  { id: 1, href: './tourlist', img: forest, label: 'جنگلی' },
-  { id: 2, href: './tourlist', img: umbrella, label: 'ساحلی' },
-  { id: 3, href: './tourlist', img: place, label: 'زیارتی' },
-  { id: 4, href: './tourlist', img: group, label: 'بومگردی' },
-  { id: 5, href: './tourlist', img: map, label: 'تاریخی' },
-  { id: 6, href: './tourlist', img: airicon, label: 'خارجی' },
-  { id: 7, href: './tourlist', img: luggage, label: 'همه تورها' },
+  { id: 1, href: './tours', img: forest, label: 'جنگلی' },
+  { id: 2, href: './tours', img: umbrella, label: 'ساحلی' },
+  { id: 3, href: './tours', img: place, label: 'زیارتی' },
+  { id: 4, href: './tours', img: group, label: 'بومگردی' },
+  { id: 5, href: './tours', img: map, label: 'تاریخی' },
+  { id: 6, href: './tours', img: airicon, label: 'خارجی' },
+  { id: 7, href: './tours', img: luggage, label: 'همه تورها' },
 ];
 
 const Category: React.FC = () => {

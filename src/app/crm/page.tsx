@@ -8,20 +8,15 @@ import React from 'react';
 
 const page = () => {
   return (
-    <div className='flex w-full bg-stone-50 min-h-screen mx-auto'>
-      <div className=''>
-        <SideBar  />
+    <div className='flex flex-col w-full  mx-auto'>
+      <DashboardHeader />
+      <div className='flex mx-auto gap-6 h-[400px]'>
+        <InformatioCards />
+        <ReservationChart />
       </div>
-      <div className='flex flex-col flex-grow'>
-        <DashboardHeader />
-        <div className='flex mx-auto gap-6 h-[400px]'>
-          <InformatioCards />
-          <ReservationChart />
-        </div>
-        <div className='mt-6 flex justify-center gap-6'>
-          <Incomes />
-          <RefundChart/>
-        </div>
+      <div className='mt-6 flex justify-center gap-6'>
+        <Incomes />
+        <RefundChart />
       </div>
     </div>
   );
