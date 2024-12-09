@@ -6,7 +6,7 @@ import Filter from '@/components/tourList/Filter';
 const TourList: React.FC = () => {
   return (
     <div className='flex bg-stone-50 justify-center'>
-      {/* <Filter/> */}
+      <Filter/>
       <TourCard />
     </div>
   );

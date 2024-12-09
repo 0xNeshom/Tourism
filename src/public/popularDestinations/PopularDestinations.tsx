@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Banner from '@/public/image 20.svg';
-import shadow from '@/public/Home page pictures.svg';
-import bg from '@/public/isfahan.svg';
-import bg1 from '@/public/image 18.svg';
-import shadow1 from '@/public/shadow1.svg';
+import Banner from '@/public/popularDestinations/image 20.svg';
+import shadow from '@/public/popularDestinations/Home page pictures.svg';
+import bg from '@/public/popularDestinations/isfahan.svg';
+import bg1 from '@/public/popularDestinations/image 18.svg';
+import shadow1 from '@/public/popularDestinations/shadow1.svg';
 
 const PopularDestinations: React.FC = () => {
   return (

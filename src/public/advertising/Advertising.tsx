@@ -1,6 +1,6 @@
-import icon1 from "@/public/map-icon.svg"
-import icon2 from "@/public/wallet-icon.svg"
-import icon3 from "@/public/plant-icon-2.svg"
+import icon1 from "@/public/advertising/map-icon.svg"
+import icon2 from "@/public/advertising/wallet-icon.svg"
+import icon3 from "@/public/advertising/plant-icon-2.svg"
 import Image from "next/image"
 const Advertising = () => {
     const options= [

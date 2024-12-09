@@ -29,7 +29,7 @@ const Page: React.FC = () => {
   }
 
   const reviews = data || [];
-  console.log('API Data: ', reviews);
+ 
 
   return (
     <div className="w-full mx-auto px-4 py-10">

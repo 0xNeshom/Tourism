@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getTourData } from '@/utilities/actions/TourDataFetch';
 import { toPersianDigits } from '@/utilities/persianNumber/persian';
 import Link from 'next/link';
+import Loading from '@/utilities/loading/Loading';
 import Forest from './Forest';
 import tourData from '@/data/tourData.json';
 import tourPhoto from '@/public/tourList/Vector.svg';
@@ -25,9 +26,7 @@ const TourCard = () => {
 
   if (isLoading) {
     return (
-      <div className='w-full flex justify-center md:h-[700px] h-[700px]'>
-        <span className='loading loading-spinner loading-lg text-primary'></span>
-      </div>
+      <Loading/>
     );
   }
   if (isError) {
