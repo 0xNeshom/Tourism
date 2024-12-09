@@ -37,7 +37,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className='w-[310px] flex-shrink-0 shadow-xl top-10 h-screen sticky bg-white  right-[46px]'>
+    <div className='w-[310px] h-[90%] flex-shrink-0 shadow-xl top-10  sticky bg-white  mr-[46px] '>
       <Link href={'/'}>
         <Image src={LogoPannel} alt='logo' />
       </Link>{' '}
@@ -66,8 +66,8 @@ const SideBar = () => {
             </Link>
           );
         })}
-        <Link href='/logout' className='mt-10 mb-8'>
-          <div className='flex items-center gap-5 px-4 w-full py-4 hover:bg-[#D8BFD829] rounded-lg'>
+        <Link href='/logout' className='mt-7 mb-5'>
+          <div className='flex items-center gap-5 px-4 py-2 w-full  hover:bg-[#D8BFD829] rounded-lg'>
             <Image src={iconly8} alt='logout' width={20} height={20} />
             <span className='text-base hover:text-blue-500'>
               خروج از حساب کاربری

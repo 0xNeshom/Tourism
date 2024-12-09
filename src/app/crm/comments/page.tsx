@@ -22,18 +22,17 @@ const Page: React.FC = () => {
 
   if (isError) {
     return (
-      <div className="flex justify-center items-center min-h-[400px] text-red-500">
+      <div className='flex justify-center items-center min-h-[400px] text-red-500'>
         <span>خطا در دریافت اطلاعات</span>
       </div>
     );
   }
 
   const reviews = data || [];
- 
 
   return (
-    <div className="w-full mx-auto px-4 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-10 mr-20 justify-center mx-auto">
+    <div className='w-full mx-auto  py-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 ml-10 mr-20 justify-center mx-auto'>
         {reviews.map((review) => (
           <ReviewCard key={review.id} review={review} />
         ))}
