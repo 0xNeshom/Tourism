@@ -3,7 +3,7 @@
 import { useQuery } from 'react-query';
 import Link from 'next/link';
 import ReviewCard from '@/components/pannel/ReviewCard';
-import { getComments } from '@/utilities/actions/crm/CommentList';
+import { getComments } from '@/utilities/actions/CommentList';
 import { Review } from '@/utilities/types/ReviewCard';
 
 const Page: React.FC = () => {
@@ -33,7 +33,7 @@ const Page: React.FC = () => {
 
   return (
     <div className="w-full mx-auto px-4 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mr-14 justify-center mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-10 mr-20 justify-center mx-auto">
         {reviews.map((review) => (
           <ReviewCard key={review.id} review={review} />
         ))}

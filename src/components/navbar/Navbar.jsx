@@ -67,7 +67,7 @@ const Navbar = () => {
               className='hover:opacity-80'
             />
           </Link>
-          <Link href=''>
+          <Link href='/support'>
             <span className='hover:text-primary'>پشتیبانی</span>
           </Link>
         </div>

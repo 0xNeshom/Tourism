@@ -38,7 +38,9 @@ const SideBar = () => {
 
   return (
     <div className='w-[310px] flex-shrink-0 shadow-xl top-10 h-screen sticky bg-white  right-[46px]'>
-      <Image src={LogoPannel} alt='logo' />
+      <Link href={'/'}>
+        <Image src={LogoPannel} alt='logo' />
+      </Link>{' '}
       <div className='flex flex-col text-base'>
         {data.map((item) => {
           const fullPath =
