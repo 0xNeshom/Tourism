@@ -22,7 +22,7 @@ export default function Home() {
       <Header />
       <Search />
       <Category />
-      <PopularDestinations />
+      {/* <PopularDestinations /> */}
       <SpecialOffers />
       <Advertising />
       <FavoriteDestination />
