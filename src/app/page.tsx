@@ -2,7 +2,7 @@
 import Navbar from '@/components/navbar/Navbar';
 import Header from '@/components/main/Header';
 import Category from '@/components/main/Category';
-import PopularDestinations from '@/public/popularDestinations/PopularDestinations';
+import PopularDestinations from '@/components/main/PopularDestinations';
 import CategoryOptions from '@/components/main/Search';
 import Advertising from '@/public/advertising/Advertising';
 import FavoriteDestination from '@/components/main/FavoriteDestination';
@@ -22,7 +22,7 @@ export default function Home() {
       <Header />
       <Search />
       <Category />
-      {/* <PopularDestinations /> */}
+      <PopularDestinations />
       <SpecialOffers />
       <Advertising />
       <FavoriteDestination />
